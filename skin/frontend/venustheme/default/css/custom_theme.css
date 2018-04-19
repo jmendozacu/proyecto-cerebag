@@ -1084,8 +1084,8 @@ th, code, cite, caption {
 
 /* line 664, ../scss/custom_theme.scss */
 .bg-parallax-1 {
-  background: url("../images/showcase/adv-footer1.jpg") no-repeat fixed 50% 0;
-  background-position: 50% 0;
+  background: url("../images/showcase/desguace_los_tollos.jpg") no-repeat fixed 50% 0;
+  background-position: 50% 41%;
 }
 /* line 158, ../scss/bootstrap/_rtl.scss */
 .rtl .bg-parallax-1 {

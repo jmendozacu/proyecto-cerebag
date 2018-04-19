@@ -81,6 +81,51 @@ $mq-fixed-value: 1024;
  * Corrects `block` display not defined in IE 8/9.
  */
 /* line 11, ../../../rwd/default/scss/vendor/_normalize.scss */
+.email-link{
+  color:#00964b;
+}
+.email-link:hover{
+  color:#00b730;
+}
+.email-link:focus{
+  color:#00964b;
+  opacity:0.8;
+}
+.footer-container div div{
+  margin-bottom: 10px;
+}
+@media only screen and (max-width: 767px){
+  .img-responsive{
+    height:50px;
+  }
+  .custom-iframe{
+    position: relative;
+    padding-bottom: 70%;
+    height: 0;
+    overflow: hidden;
+  }
+  .custom-iframe iframe{
+
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .img-responsive{
+    height:100px;
+  }
+  .custom-iframe{
+    height: 300px;
+    width: 100%;
+  }
+}
+.parallax-medium-data{
+  border-top: 1px solid #006b3c;
+  border-bottom: 1px solid #006b3c;
+}
 article,
 aside,
 details,
@@ -596,20 +641,21 @@ textarea {
 
 /* line 62, ../../../rwd/default/scss/core/_common.scss */
 a {
-  color: #00964b;
+  color: black;
   text-decoration: none;
 }
 
 /* line 67, ../../../rwd/default/scss/core/_common.scss */
 a:hover {
-  color: #00964b;
-  text-decoration: underline;
+  color: black;
+  text-decoration: none;
 }
 
 /* line 72, ../../../rwd/default/scss/core/_common.scss */
 a:focus {
   /*outline-color: #fe4545;*/
-  color: #00964b;
+  color: black;
+  text-decoration: none;
 }
 
 /* line 77, ../../../rwd/default/scss/core/_common.scss */
@@ -1160,9 +1206,10 @@ body:not(.customer-account) .block:first-child .block-title {
 .footer .button:focus,
 .footer .product-block .product-info .actions .add-to-links li a:focus,
 .product-block .product-info .actions .add-to-links li .footer a:focus {
-  background-color: #fe1f1f;
+  background-color: #00964b;
   outline: none;
   color: #FFFFFF;
+  opacity:0.8;
 }
 
 /* line 374, ../../../rwd/default/scss/core/_common.scss */
@@ -6008,7 +6055,7 @@ p.product-name a:hover {
 /* line 56, ../../../rwd/default/scss/module/_catalog-product.scss */
 .product-view .product-shop .product-name .h1,
 .product-view .product-img-box .product-name h1 {
-  color: #fe5252;
+  color: #00964b;
   margin-bottom: 10px;
   border: 0;
 }
@@ -6074,7 +6121,7 @@ p.product-name a:hover {
 .product-view .product-shop .price-box .regular-price .price,
 .product-view .product-shop .price-box .special-price .price,
 .product-view .product-shop .price-box .full-product-price .price {
-  color: #fe5252;
+  color: black;
   font-size: 24px;
 }
 /* line 127, ../../../rwd/default/scss/module/_catalog-product.scss */
@@ -12010,12 +12057,12 @@ div.paypal-logo span > img {
 /* line 57, ../../../rwd/default/scss/module/_cms.scss */
 .cms-page-view .std h1,
 .cms-no-route .std h1 {
-  color: #fe5252;
+  color: #00964b;
 }
 /* line 61, ../../../rwd/default/scss/module/_cms.scss */
 .cms-page-view .std h2,
 .cms-no-route .std h2 {
-  color: #fe5252;
+  color: #00964b;
 }
 /* line 65, ../../../rwd/default/scss/module/_cms.scss */
 .cms-page-view .std li,
@@ -13320,7 +13367,7 @@ div.calendar table td.button {
     display: block;
     border-top: 4px solid transparent;
     border-bottom: 4px solid transparent;
-    border-left: 4px solid #fe5252;
+    border-left: 4px solid #00964b;
     border-right: none;
     left: 10px;
     top: 50%;
@@ -13367,7 +13414,7 @@ div.calendar table td.button {
     display: block;
     border-right: 4px solid transparent;
     border-left: 4px solid transparent;
-    border-top: 4px solid #fe5252;
+    border-top: 4px solid #00964b ;
     border-bottom: none;
     left: 10px;
     top: 50%;
@@ -13956,14 +14003,14 @@ div.calendar table td.button {
 .iview-caption-v3 {
   position: relative;
   text-align: center;
-  color: #fff;
+  color: #00b730;
   padding: 20px 0 30px;
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  border: 1px solid #006b3c;
 }
 /* line 278, ../scss/module/_slideshow.scss */
 .iview-caption-v3 span .button, .iview-caption-v3 span .product-block .product-info .actions .add-to-links li a, .product-block .product-info .actions .add-to-links li .iview-caption-v3 span a {
   padding: 5px 15px;
-  border: 1px solid #fff;
+  border: 1px solid #006b3c;
   background: transparent;
   max-width: 100px;
   margin-top: 20px;
@@ -13992,8 +14039,8 @@ div.calendar table td.button {
 .iview-caption-v3 .main-text3 {
   padding: 10px 0;
   font-size: 18px;
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  /*border-top: 1px solid #006b3c;
+  border-bottom: 1px solid #006b3c;*/
   text-transform: uppercase;
 }
 
@@ -23258,7 +23305,7 @@ sup {
 }
 /* line 317, ../scss/module/_product.scss */
 .product-essential .add-to-links a:hover, .product-essential .add-to-links a:focus {
-  color: #fe5252;
+  color: #00964b;
   text-decoration: none;
 }
 /* line 323, ../scss/module/_product.scss */

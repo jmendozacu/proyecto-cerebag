@@ -52,7 +52,7 @@ class Ves_Themesettings_Block_Adminhtml_System_Config_Form_Field_Product_Product
 		// Add to link
 		$item .= '<ul class="add-to-links">';
 		$item .= '<li class="link-wishlist"><i class="fa fa-heart-o"></i><span>Add To Wishlist</span></li>';
-		$item .= '<li class="link-compare"><i class="fa fa-files-o"></i><span>Add To Compare</span></li>';
+		//$item .= '<li class="link-compare"><i class="fa fa-files-o"></i><span>Add To Compare</span></li>';
 		$item .= '<li></li>';
 		$item .= '</ul>'; // Add to link
 		$item .= '</div>'; // Action
