@@ -81,6 +81,9 @@ $mq-fixed-value: 1024;
  * Corrects `block` display not defined in IE 8/9.
  */
 /* line 11, ../../../rwd/default/scss/vendor/_normalize.scss */
+.brand-meta .brand-image img{
+  max-width:20%;
+}
 .email-link{
   color:#00964b;
 }
@@ -112,11 +115,26 @@ $mq-fixed-value: 1024;
   .img-responsive{
     height:50px;
   }
-
+  .ves-parallax{
+    font-size:12px;
+  }
+  .ourservice-block .media .ourservice-content .iview-caption-v3 span{
+    font-size: 15px;
+  }
+  .ourservice-block .media .ourservice-content .iview-caption-v3 div{
+    padding: 0px 15px;
+    line-height: 16px;
+    text-align: left;
+  }
 }
 @media only screen and (min-width: 768px) {
   .img-responsive {
     height: 100px;
+  }
+  .ourservice-block .media .ourservice-content .iview-caption-v3 div{
+    padding: 0px 62px;
+    line-height: 16px;
+    text-align: left;
   }
 
 }
@@ -671,7 +689,7 @@ ul {
 h1, .h1 {
   margin: 0;
   margin-bottom: 0.7em;
-  color: #fe5252;
+  color: #00964b;
   font-family: "Roboto", sans-serif;
   font-size: 28px;
   font-weight: 400;
@@ -5123,7 +5141,7 @@ h3.product-name a:hover,
 h4.product-name a:hover,
 h5.product-name a:hover,
 p.product-name a:hover {
-  color: #fe5252;
+  color: #00964b;
   text-decoration: none;
 }
 
@@ -6628,7 +6646,7 @@ p.product-name a:hover {
   /* line 63, ../../../rwd/default/scss/mixin/_toggle-content.scss */
   .product-collateral .toggle-tabs li.current span,
   .product-collateral .toggle-tabs li:hover span {
-    color: #fe5252;
+    color: #00964b;
   }
   /* line 68, ../../../rwd/default/scss/mixin/_toggle-content.scss */
   .product-collateral .toggle-tabs li:first-child {
@@ -6711,7 +6729,7 @@ p.product-name a:hover {
     display: block;
     border-right: 4px solid transparent;
     border-left: 4px solid transparent;
-    border-top: 4px solid #fe5252;
+    border-top: 4px solid #00964b;
     border-bottom: none;
     left: 10px;
     top: 50%;
@@ -14001,14 +14019,14 @@ div.calendar table td.button {
 .iview-caption-v3 {
   position: relative;
   text-align: center;
-  color: #00b730;
+  color: black;
   padding: 20px 0 30px;
-  border: 1px solid #006b3c;
+  border: 1px solid black;
 }
 /* line 278, ../scss/module/_slideshow.scss */
 .iview-caption-v3 span .button, .iview-caption-v3 span .product-block .product-info .actions .add-to-links li a, .product-block .product-info .actions .add-to-links li .iview-caption-v3 span a {
   padding: 5px 15px;
-  border: 1px solid #006b3c;
+  border: 1px solid black;
   background: transparent;
   max-width: 100px;
   margin-top: 20px;
@@ -14388,7 +14406,7 @@ div.calendar table td.button {
 .ves-megamenu .navbar-nav > li.active a span,
 .ves-megamenu .navbar-nav > li.active a:hover span,
 .ves-megamenu .navbar-nav > li.active a:active span {
-  color: #fe5252;
+  color: #00964b;
 }
 /* line 74, ../scss/module/_megamenu.scss */
 .ves-megamenu .navbar-nav > li.active a::after,
