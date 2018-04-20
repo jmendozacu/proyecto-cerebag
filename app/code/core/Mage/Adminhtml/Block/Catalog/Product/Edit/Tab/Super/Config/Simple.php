@@ -149,8 +149,8 @@ class Mage_Adminhtml_Block_Catalog_Product_Edit_Tab_Super_Config_Simple
             'label' => Mage::helper('catalog')->__('Stock Availability'),
             'name'  => 'stock_data[is_in_stock]',
             'values' => array(
-                array('value'=>1, 'label'=> Mage::helper('catalog')->__('In Stock')),
-                array('value'=>0, 'label'=> Mage::helper('catalog')->__('Out of Stock'))
+                array('value'=>1, 'label'=> Mage::helper('catalog')->__('En Stock')),
+                array('value'=>0, 'label'=> Mage::helper('catalog')->__('Sin Stock'))
             ),
             'value' => 1
         ));

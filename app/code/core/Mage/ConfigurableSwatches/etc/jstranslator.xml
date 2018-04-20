@@ -28,13 +28,13 @@
 <jstranslator>
     <!-- swatches-product.js -->
     <add-to-cart translate="message" module="configurableswatches">
-        <message>Add to Cart</message>
+        <message>Añadir al carrito</message>
     </add-to-cart>
     <in-stock translate="message" module="configurableswatches">
-        <message>In Stock</message>
+        <message>En Stock</message>
     </in-stock>
     <out-of-stock translate="message" module="configurableswatches">
-        <message>Out of Stock</message>
+        <message>Sin Stock</message>
     </out-of-stock>
     <!-- end swatches-product.js -->
 </jstranslator>

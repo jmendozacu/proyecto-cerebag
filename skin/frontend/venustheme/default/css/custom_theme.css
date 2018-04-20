@@ -682,6 +682,7 @@ input:focus, input:hover, select:focus {
   margin-left: 5px;
   margin-right: inherit;
 }
+
 /* line 443, ../scss/custom_theme.scss */
 .widget-sociallinks ul li a {
   transition: all 0.4s;
@@ -704,8 +705,26 @@ input:focus, input:hover, select:focus {
 /* line 455, ../scss/custom_theme.scss */
 .widget-sociallinks ul li:hover a, .widget-sociallinks ul li:focus a {
   transition:  all 0.4s;
-  color: #00964b;
-  background-color: white;
+  /*color: #00964b;*/
+  background-color: white !important;
+}
+.facebook{
+  background-color:#4867aa !important;
+}
+.twitter{
+ background-color: #2daae2 !important;
+}
+.youtube{
+  background-color: #ff0000 !important;
+}
+.facebook:hover{
+  color: #4867aa !important;
+}
+.twitter:hover{
+  color:#2daae2 !important;
+}
+.youtube:hover{
+  color: #ff0000 !important;
 }
 
 /* line 463, ../scss/custom_theme.scss */
