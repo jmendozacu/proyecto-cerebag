@@ -175,12 +175,12 @@ class Mage_Customer_Model_Customer extends Mage_Core_Model_Abstract
     {
         $this->loadByEmail($login);
         if ($this->getConfirmation() && $this->isConfirmationRequired()) {
-            throw Mage::exception('Mage_Core', Mage::helper('customer')->__('This account is not confirmed.'),
+            throw Mage::exception('Mage_Core', Mage::helper('customer')->__('Esta cuenta no esta confirmada.'),
                 self::EXCEPTION_EMAIL_NOT_CONFIRMED
             );
         }
         if (!$this->validatePassword($password)) {
-            throw Mage::exception('Mage_Core', Mage::helper('customer')->__('Invalid login or password.'),
+            throw Mage::exception('Mage_Core', Mage::helper('customer')->__('Correo o contraseñas incorrectos'),
                 self::EXCEPTION_INVALID_EMAIL_OR_PASSWORD
             );
         }
@@ -604,7 +604,7 @@ class Mage_Customer_Model_Customer extends Mage_Core_Model_Abstract
             'confirmation' => self::XML_PATH_CONFIRM_EMAIL_TEMPLATE, // email with confirmation link
         );
         if (!isset($types[$type])) {
-            Mage::throwException(Mage::helper('customer')->__('Wrong transactional account email type'));
+            Mage::throwException(Mage::helper('customer')->__('Tipo de correo de cuenta transaccional incorrecto'));
         }
 
         if (!$storeId) {

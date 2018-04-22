@@ -37,7 +37,7 @@ class Mage_Sales_Billing_AgreementController extends Mage_Core_Controller_Front_
      */
     public function indexAction()
     {
-        $this->_title($this->__('Billing Agreements'));
+        $this->_title($this->__('Acuerdos de facturación'));
         $this->loadLayout();
         $this->_initLayoutMessages('customer/session');
         $this->renderLayout();
@@ -77,7 +77,7 @@ class Mage_Sales_Billing_AgreementController extends Mage_Core_Controller_Front_
             return;
         }
 
-        $this->_title($this->__('Billing Agreements'))
+        $this->_title($this->__('Acuerdos de facturación'))
             ->_title($this->__('Billing Agreement # %s', $agreement->getReferenceId()));
         $this->loadLayout();
         $this->_initLayoutMessages('customer/session');

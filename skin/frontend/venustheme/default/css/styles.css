@@ -81,6 +81,28 @@ $mq-fixed-value: 1024;
  * Corrects `block` display not defined in IE 8/9.
  */
 /* line 11, ../../../rwd/default/scss/vendor/_normalize.scss */
+.toolbar-bottom{
+  display: none;
+}
+#google_translate_element{
+  display:none;
+}
+.m-filter-item-list li a:hover{
+  color:#00964b;
+}
+.m-filter-item-list li{
+  border-bottom: 1px dashed lightgrey;
+  padding: 5px 0px 4px 9px;
+}
+.actions a:hover{
+  opacity:0.6;
+}
+.m-selected-filter-item{
+  color:#00964b;
+}
+.product-collateral{
+  display: none;
+}
 .brand-meta .brand-image img{
   max-width:20%;
 }
@@ -1080,7 +1102,7 @@ body:not(.customer-account) .block:first-child .block-title {
 .block-account li strong,
 .block-cms-menu li strong {
   font-weight: 400;
-  color: #fe5252;
+  color: #00964b;
 }
 /* line 295, ../../../rwd/default/scss/core/_common.scss */
 .block-account li a,
@@ -1277,7 +1299,7 @@ a.button:hover, .product-block .product-info .actions .add-to-links li a:hover {
   text-decoration: underline;
   text-transform: uppercase;
   display: inline-block;
-  color: #fe5252;
+  color: black;
   font-family: "Roboto", sans-serif;
 }
 /* line 428, ../../../rwd/default/scss/core/_common.scss */
@@ -1512,14 +1534,14 @@ a.button:hover, .product-block .product-info .actions .add-to-links li a:hover {
 /* line 631, ../../../rwd/default/scss/core/_common.scss */
 .btn-remove:hover,
 .btn-previous:hover {
-  background-color: #fe5252;
-  border-color: #fe5252;
+  background-color: #00964b;
+  border-color: #00964b;
 }
 
 /* line 638, ../../../rwd/default/scss/core/_common.scss */
 .btn-remove:after {
   content: 'X';
-  color: #fe5252;
+  color: #00964b;
   height: 20px;
   line-height: 20px;
   width: 100%;
@@ -2389,7 +2411,7 @@ span.weee {
   z-index: 300;
   width: 200px;
   padding: 8px;
-  border: 1px solid #fe5252;
+  border: 1px solid #00964b;
   background-color: #F6F6F6;
   top: 21px;
   left: -100px;
@@ -2403,7 +2425,7 @@ span.weee {
   display: block;
   border-right: 7px solid transparent;
   border-left: 7px solid transparent;
-  border-bottom: 7px solid #fe5252;
+  border-bottom: 7px solid #00964b;
   border-top: none;
   left: 97px;
   top: -7px;
@@ -2587,9 +2609,9 @@ span.weee {
 .toolbar {
   margin-top: 10px;
   margin-bottom: 15px;
-  border-bottom: 1px solid #CCCCCC;
-  border-top: 1px solid #CCCCCC;
-  background: #F4F4F4;
+  /*border-bottom: 1px solid #CCCCCC;
+  border-top: 1px solid #CCCCCC;*/
+  background: white;
   padding: 5px 10px 0px 10px;
 }
 /* line 1533, ../../../rwd/default/scss/core/_common.scss */
@@ -2667,7 +2689,7 @@ span.weee {
 }
 /* line 1590, ../../../rwd/default/scss/core/_common.scss */
 .sorter > .sort-by .sort-by-switcher--asc:hover {
-  background-position: -46px -542px;
+  /*background-position: -46px -542px;*/
 }
 /* line 1594, ../../../rwd/default/scss/core/_common.scss */
 .sorter > .sort-by .sort-by-switcher--desc {
@@ -2675,7 +2697,7 @@ span.weee {
 }
 /* line 1596, ../../../rwd/default/scss/core/_common.scss */
 .sorter > .sort-by .sort-by-switcher--desc:hover {
-  background-position: -46px -567px;
+  /*background-position: -46px -567px;*/
 }
 
 /* line 1602, ../../../rwd/default/scss/core/_common.scss */
@@ -2776,7 +2798,7 @@ span.weee {
   width: 25px;
   height: 30px;
   padding: 0;
-  color: #fe5252;
+  color: black;
   font-family: "Roboto", Verdana, Arial, sans-serif;
 }
 
@@ -2802,7 +2824,7 @@ span.weee {
 /* line 1716, ../../../rwd/default/scss/core/_common.scss */
 .pages .next:hover,
 .pages .previous:hover {
-  border: 1px solid #fe5252;
+  border: 1px solid #00964b;
 }
 
 /* line 1722, ../../../rwd/default/scss/core/_common.scss */
@@ -2814,7 +2836,7 @@ span.weee {
   display: block;
   border-top: 4px solid transparent;
   border-bottom: 4px solid transparent;
-  border-left: 4px solid #fe5252;
+  border-left: 4px solid #00964b;
   border-right: none;
   top: 50%;
   margin-top: -3px;
@@ -2830,7 +2852,7 @@ span.weee {
   display: block;
   border-top: 4px solid transparent;
   border-bottom: 4px solid transparent;
-  border-left: 4px solid #fe0606;
+  border-left: 4px solid #00964b;
   border-right: none;
 }
 
@@ -2843,7 +2865,7 @@ span.weee {
   display: block;
   border-top: 4px solid transparent;
   border-bottom: 4px solid transparent;
-  border-right: 4px solid #fe5252;
+  border-right: 4px solid #00964b;
   border-left: none;
   top: 50%;
   margin-top: -3px;
@@ -2859,7 +2881,7 @@ span.weee {
   display: block;
   border-top: 4px solid transparent;
   border-bottom: 4px solid transparent;
-  border-right: 4px solid #fe0606;
+  border-right: 4px solid #00964b;
   border-left: none;
 }
 
@@ -4724,7 +4746,7 @@ a.skip-link {
   /* line 134, ../../../rwd/default/scss/layout/_header-cart.scss */
   .skip-cart .count,
   .skip-link.skip-active .count {
-    color: #fe5252;
+    color: #00964b;
   }
 }
 /* line 140, ../../../rwd/default/scss/layout/_header-cart.scss */
@@ -5737,7 +5759,7 @@ p.product-name a:hover {
   display: block;
   border-right: 4px solid transparent;
   border-left: 4px solid transparent;
-  border-top: 4px solid #fe5252;
+  border-top: 4px solid #00964b;
   border-bottom: none;
   left: 10px;
   top: 50%;
@@ -5774,10 +5796,14 @@ p.product-name a:hover {
   padding: 7px 10px 7px 24px;
   border-width: 1px;
   border-style: solid;
-  border-color: #CCCCCC;
+  border-color: black;
   position: relative;
-  background-color: #F4F4F4;
+  background-color: white;
   display: block;
+  border-left:0;
+  border-right: 0;
+  border-top:0;
+  margin-top:17px;
 }
 /* line 110, ../../../rwd/default/scss/mixin/_toggle-content.scss */
 .block-layered-nav .block-content > dl > dt:after {
@@ -5788,7 +5814,7 @@ p.product-name a:hover {
   display: block;
   border-right: 4px solid transparent;
   border-left: 4px solid transparent;
-  border-top: 4px solid #fe5252;
+  border-top: 4px solid #00964b;
   border-bottom: none;
   left: 10px;
   top: 50%;
@@ -5796,15 +5822,15 @@ p.product-name a:hover {
 }
 /* line 117, ../../../rwd/default/scss/mixin/_toggle-content.scss */
 .block-layered-nav .block-content > dl > dt:hover {
-  background-color: #ededed;
+  background-color: white;
 }
 /* line 133, ../../../rwd/default/scss/mixin/_toggle-content.scss */
 .block-layered-nav .block-content > dl > dd {
-  padding: 10px;
+  padding: 0px;
   margin: 0;
-  border-width: 0 1px;
+  /*border-width: 0 1px;
   border-style: solid;
-  border-color: #CCCCCC;
+  border-color: #CCCCCC;*/
 }
 /* line 140, ../../../rwd/default/scss/mixin/_toggle-content.scss */
 .block-layered-nav .block-content > dl > dd:last-child {
@@ -5859,7 +5885,7 @@ p.product-name a:hover {
   }
   /* line 152, ../../../rwd/default/scss/mixin/_toggle-content.scss */
   .block-layered-nav .block-content > dl > dt:hover {
-    color: #fe5252;
+    color: #00964b;
   }
   /* line 155, ../../../rwd/default/scss/mixin/_toggle-content.scss */
   .block-layered-nav .block-content > dl > dt:after {
@@ -5870,12 +5896,12 @@ p.product-name a:hover {
     display: block;
     border-top: 4px solid transparent;
     border-bottom: 4px solid transparent;
-    border-left: 4px solid #fe5252;
+    border-left: 4px solid #00964b;
     border-right: none;
   }
   /* line 158, ../../../rwd/default/scss/mixin/_toggle-content.scss */
   .block-layered-nav .block-content > dl > dt.last {
-    border-bottom-width: 1px;
+    border-bottom-width: 0px;
   }
   /* line 163, ../../../rwd/default/scss/mixin/_toggle-content.scss */
   .block-layered-nav .block-content > dl > dd {
@@ -5894,7 +5920,7 @@ p.product-name a:hover {
     display: block;
     border-right: 4px solid transparent;
     border-left: 4px solid transparent;
-    border-top: 4px solid #fe5252;
+    border-top: 4px solid #00964b;
     border-bottom: none;
     left: 6px;
     top: 50%;
@@ -5907,11 +5933,13 @@ p.product-name a:hover {
 
   /* line 526, ../../../rwd/default/scss/module/_product-list.scss */
   .block-layered-nav .block-subtitle--filter {
-    background-color: #fe5252;
-    border: 0;
+    background-color: white;
     margin-bottom: 0;
+    border: 0;
     display: block;
-    color: #FFFFFF;
+    color: black;
+
+    border-bottom: 1px solid black;
   }
   /* line 533, ../../../rwd/default/scss/module/_product-list.scss */
   .block-layered-nav .block-subtitle--filter:after {
@@ -5922,16 +5950,16 @@ p.product-name a:hover {
     display: block;
     border-top: 4px solid transparent;
     border-bottom: 4px solid transparent;
-    border-left: 4px solid #FFFFFF;
-    border-right: none;
+    /*border-left: 4px solid #FFFFFF;
+    border-right: none;*/
     right: 10px;
     top: 50%;
     margin-top: -5px;
   }
   /* line 540, ../../../rwd/default/scss/module/_product-list.scss */
   .block-layered-nav .block-subtitle--filter:hover {
-    background-color: #fe3939;
-    color: #FFFFFF;
+    background-color: white;
+    color: black;
   }
   /* line 545, ../../../rwd/default/scss/module/_product-list.scss */
   .block-layered-nav .block-subtitle--filter.active:after {
@@ -5952,8 +5980,8 @@ p.product-name a:hover {
   /* line 553, ../../../rwd/default/scss/module/_product-list.scss */
   #narrow-by-list,
   #narrow-by-list2 {
-    padding: 10px;
-    border: 1px solid #CCCCCC;
+    padding: 0px;
+    /*border: 1px solid #CCCCCC;*/
     border-top: 0;
   }
 
@@ -5967,13 +5995,13 @@ p.product-name a:hover {
   /* line 566, ../../../rwd/default/scss/module/_product-list.scss */
   .block-layered-nav dl ol > li > a {
     color: #636363;
-    background-color: #F4F4F4;
+    background-color: white;
     padding: 5px 10px;
   }
   /* line 569, ../../../rwd/default/scss/module/_product-list.scss */
   .block-layered-nav dl ol > li > a:hover {
     text-decoration: none;
-    background: #ededed;
+    background: white;
   }
 }
 /* line 577, ../../../rwd/default/scss/module/_product-list.scss */
@@ -6793,7 +6821,7 @@ p.product-name a:hover {
     display: block;
     border-right: 4px solid transparent;
     border-left: 4px solid transparent;
-    border-top: 4px solid #fe5252;
+    border-top: 4px solid #00964b;
     border-bottom: none;
     left: 6px;
     top: 50%;
@@ -7567,7 +7595,11 @@ p.product-name a:hover {
 .cart-forms .discount,
 .cart-forms .giftcard,
 .cart-forms .shipping {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+}
+.cart-forms .discount, .cart-forms .shipping{
+  display: none;
+
 }
 
 /* line 66, ../../../rwd/default/scss/module/_checkout-cart.scss */
@@ -8652,7 +8684,7 @@ p.product-name a:hover {
   text-align: center;
   color: #FFFFFF;
   line-height: 26px;
-  background-color: #fe5252;
+  background-color: #00964b;
   display: block;
   position: absolute;
   top: 50%;
@@ -8673,7 +8705,7 @@ p.product-name a:hover {
 /* line 134, ../../../rwd/default/scss/module/_checkout-onepage.scss */
 .opc .section.allow .step-title:hover h2,
 .opc .section.active .step-title h2 {
-  color: #fe5252;
+  color: black;
 }
 
 /* line 139, ../../../rwd/default/scss/module/_checkout-onepage.scss */
@@ -11679,7 +11711,7 @@ div.paypal-logo span > img {
 }
 /* line 104, ../../../rwd/default/scss/module/_checkout-cart-minicart.scss */
 .header-minicart .product-details .product-name a {
-  color: #fe5252;
+  color: black;
 }
 /* line 110, ../../../rwd/default/scss/module/_checkout-cart-minicart.scss */
 .header-minicart .info-wrapper {
@@ -11692,7 +11724,7 @@ div.paypal-logo span > img {
 }
 /* line 117, ../../../rwd/default/scss/module/_checkout-cart-minicart.scss */
 .header-minicart .info-wrapper td {
-  color: #fe5252;
+  color: black;
   clear: right;
 }
 /* line 123, ../../../rwd/default/scss/module/_checkout-cart-minicart.scss */
@@ -11738,7 +11770,7 @@ div.paypal-logo span > img {
 }
 /* line 163, ../../../rwd/default/scss/module/_checkout-cart-minicart.scss */
 .header-minicart .subtotal .price {
-  color: #fe5252;
+  color: black;
 }
 /* line 168, ../../../rwd/default/scss/module/_checkout-cart-minicart.scss */
 .header-minicart .minicart-actions {
@@ -13323,7 +13355,7 @@ div.calendar table td.button {
     display: block;
     border-right: 4px solid transparent;
     border-left: 4px solid transparent;
-    border-top: 4px solid #fe5252;
+    border-top: 4px solid #00964b;
     border-bottom: none;
     left: 6px;
     top: 50%;
@@ -22810,7 +22842,7 @@ sup {
 }
 /* line 127, ../scss/module/_animation.scss */
 .hover-effect.show-mobile > li {
-  width: 100% !important;
+ /* width: 100% !important;*/
   margin: 0;
 }
 /* line 131, ../scss/module/_animation.scss */
@@ -22964,6 +22996,7 @@ sup {
   zoom: 1;
   -webkit-transition: all 0.4s ease-in-out 0s;
   transition: all 0.4s ease-in-out 0s;
+  display: none;
 }
 /* line 103, ../scss/module/_product.scss */
 .product-block .product-info .actions .add-to-links li {

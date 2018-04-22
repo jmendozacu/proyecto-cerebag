@@ -43,7 +43,7 @@ if(empty($_cartQty)) {
 <div class="minicart-wrapper">
 
     <p class="block-subtitle">
-        <?php echo $this->__('Recently added item(s)') ?>
+        <?php //echo $this->__('Recently added item(s)') ?>
         <a class="close skip-link-close" href="#" title="<?php echo $this->quoteEscape($this->__('Close')); ?>">&times;</a>
     </p>
 
@@ -75,9 +75,9 @@ if(empty($_cartQty)) {
         <div class="block-content">
             <p class="subtotal">
                 <?php if ($this->canApplyMsrp()): ?>
-                    <span class="map-cart-sidebar-total"><?php echo $this->__('ORDER TOTAL WILL BE DISPLAYED BEFORE YOU SUBMIT THE ORDER'); ?></span>
+                    <span class="map-cart-sidebar-total"><?php echo $this->__('EL TOTAL DEL PEDIDO SE MOSTRARÁ ANTES DE ENVIAR EL PEDIDO'); ?></span>
                 <?php else: ?>
-                    <span class="label"><?php echo $this->__('Cart Subtotal:') ?></span> <?php echo Mage::helper('checkout')->formatPrice($this->getSubtotal()) ?>
+                    <span class="label"><?php echo $this->__('Subtotal del carrito:') ?></span> <?php echo Mage::helper('checkout')->formatPrice($this->getSubtotal()) ?>
                     <?php if ($_subtotalInclTax = $this->getSubtotalInclTax()): ?>
                         <br />(<?php echo Mage::helper('checkout')->formatPrice($_subtotalInclTax) ?> <?php echo Mage::helper('tax')->getIncExcText(true) ?>)
                     <?php endif; ?>
@@ -92,18 +92,18 @@ if(empty($_cartQty)) {
                     <?php echo $this->getChildHtml('extra_actions') ?>
                     <li>
                         <a title="<?php echo $this->quoteEscape($this->__('Checkout')) ?>" class="button checkout-button" href="<?php echo $this->getCheckoutUrl() ?>">
-                            <?php echo $this->__('Checkout') ?>
+                            <?php echo $this->__('Finalizar compra') ?>
                         </a>
                     </li>
                 </ul>
             <?php endif ?>
             <a class="cart-link" href="<?php echo $this->getUrl('checkout/cart'); ?>">
-                <?php echo $this->__('View Shopping Cart'); ?>
+                <?php echo $this->__('Ver el carrito'); ?>
             </a>
         </div>
 
     <?php else: ?>
-        <p class="empty"><?php echo $this->__('You have no items in your shopping cart.') ?></p>
+        <p class="empty"><?php echo $this->__('No tienes productos en el carrito.') ?></p>
 
     <?php endif ?>
 </div>

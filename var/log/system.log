@@ -1086,58 +1086,278 @@
 2018-04-20T09:09:43+00:00 DEBUG (7): product.info.child17
 2018-04-20T09:09:43+00:00 DEBUG (7): product.info.child18
 2018-04-20T09:09:43+00:00 DEBUG (7): product.info.child19
-2018-04-20T12:38:29+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
-2018-04-20T13:01:31+00:00 DEBUG (7): description
-2018-04-20T13:01:31+00:00 DEBUG (7): additional
-2018-04-20T13:01:31+00:00 DEBUG (7): reviews
-2018-04-20T13:01:31+00:00 DEBUG (7): product.info.child16
-2018-04-20T13:01:31+00:00 DEBUG (7): product.info.child17
-2018-04-20T13:01:31+00:00 DEBUG (7): product.info.child18
-2018-04-20T13:01:31+00:00 DEBUG (7): product.info.child19
-2018-04-20T13:03:28+00:00 DEBUG (7): description
-2018-04-20T13:03:28+00:00 DEBUG (7): additional
-2018-04-20T13:03:28+00:00 DEBUG (7): reviews
-2018-04-20T13:03:28+00:00 DEBUG (7): product.info.child16
-2018-04-20T13:03:28+00:00 DEBUG (7): product.info.child17
-2018-04-20T13:03:28+00:00 DEBUG (7): product.info.child18
-2018-04-20T13:03:28+00:00 DEBUG (7): product.info.child19
-2018-04-20T13:04:52+00:00 DEBUG (7): description
-2018-04-20T13:04:52+00:00 DEBUG (7): additional
-2018-04-20T13:04:52+00:00 DEBUG (7): reviews
-2018-04-20T13:04:52+00:00 DEBUG (7): product.info.child16
-2018-04-20T13:04:52+00:00 DEBUG (7): product.info.child17
-2018-04-20T13:04:52+00:00 DEBUG (7): product.info.child18
-2018-04-20T13:04:52+00:00 DEBUG (7): product.info.child19
-2018-04-20T13:05:03+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
-2018-04-20T13:12:24+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
-2018-04-20T13:21:39+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
-2018-04-20T13:28:07+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
-2018-04-20T13:36:33+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
-2018-04-20T13:37:02+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
-2018-04-20T13:45:07+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
-2018-04-20T13:46:01+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
-2018-04-20T13:49:50+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
-2018-04-20T13:51:37+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
-2018-04-20T13:52:24+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
-2018-04-20T13:53:14+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
-2018-04-20T13:53:31+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
-2018-04-20T13:54:36+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
-2018-04-20T13:54:40+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
-2018-04-20T14:04:42+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
-2018-04-20T14:05:39+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
-2018-04-20T14:11:15+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
-2018-04-20T14:21:11+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
-2018-04-20T14:21:12+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
-2018-04-20T14:23:42+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
-2018-04-20T14:24:53+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
-2018-04-20T14:25:09+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
-2018-04-20T14:25:19+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
-2018-04-20T14:27:12+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
-2018-04-20T14:27:36+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
-2018-04-20T14:27:47+00:00 DEBUG (7): description
-2018-04-20T14:27:47+00:00 DEBUG (7): additional
-2018-04-20T14:27:47+00:00 DEBUG (7): reviews
-2018-04-20T14:27:47+00:00 DEBUG (7): product.info.child16
-2018-04-20T14:27:47+00:00 DEBUG (7): product.info.child17
-2018-04-20T14:27:47+00:00 DEBUG (7): product.info.child18
-2018-04-20T14:27:47+00:00 DEBUG (7): product.info.child19
+2018-04-21T11:09:35+00:00 DEBUG (7): description
+2018-04-21T11:09:35+00:00 DEBUG (7): additional
+2018-04-21T11:09:35+00:00 DEBUG (7): reviews
+2018-04-21T11:09:35+00:00 DEBUG (7): product.info.child16
+2018-04-21T11:09:35+00:00 DEBUG (7): product.info.child17
+2018-04-21T11:09:35+00:00 DEBUG (7): product.info.child18
+2018-04-21T11:09:35+00:00 DEBUG (7): product.info.child19
+2018-04-21T11:19:44+00:00 DEBUG (7): description
+2018-04-21T11:19:44+00:00 DEBUG (7): additional
+2018-04-21T11:19:44+00:00 DEBUG (7): reviews
+2018-04-21T11:19:44+00:00 DEBUG (7): product.info.child16
+2018-04-21T11:19:44+00:00 DEBUG (7): product.info.child17
+2018-04-21T11:19:44+00:00 DEBUG (7): product.info.child18
+2018-04-21T11:19:44+00:00 DEBUG (7): product.info.child19
+2018-04-21T11:23:08+00:00 DEBUG (7): description
+2018-04-21T11:23:08+00:00 DEBUG (7): additional
+2018-04-21T11:23:08+00:00 DEBUG (7): product.info.child17
+2018-04-21T11:23:08+00:00 DEBUG (7): product.info.child18
+2018-04-21T11:23:08+00:00 DEBUG (7): product.info.child19
+2018-04-21T11:23:08+00:00 DEBUG (7): product.info.child20
+2018-04-21T11:23:45+00:00 DEBUG (7): description
+2018-04-21T11:23:45+00:00 DEBUG (7): additional
+2018-04-21T11:23:45+00:00 DEBUG (7): product.info.child17
+2018-04-21T11:23:45+00:00 DEBUG (7): product.info.child18
+2018-04-21T11:23:45+00:00 DEBUG (7): product.info.child19
+2018-04-21T11:23:45+00:00 DEBUG (7): product.info.child20
+2018-04-21T11:24:13+00:00 DEBUG (7): description
+2018-04-21T11:24:13+00:00 DEBUG (7): additional
+2018-04-21T11:24:13+00:00 DEBUG (7): reviews
+2018-04-21T11:24:13+00:00 DEBUG (7): product.info.child16
+2018-04-21T11:24:13+00:00 DEBUG (7): product.info.child17
+2018-04-21T11:24:13+00:00 DEBUG (7): product.info.child18
+2018-04-21T11:24:13+00:00 DEBUG (7): product.info.child19
+2018-04-21T11:25:05+00:00 DEBUG (7): description
+2018-04-21T11:25:05+00:00 DEBUG (7): additional
+2018-04-21T11:25:05+00:00 DEBUG (7): product.info.child17
+2018-04-21T11:25:05+00:00 DEBUG (7): product.info.child18
+2018-04-21T11:25:05+00:00 DEBUG (7): product.info.child19
+2018-04-21T11:25:05+00:00 DEBUG (7): product.info.child20
+2018-04-21T11:26:21+00:00 DEBUG (7): description
+2018-04-21T11:26:21+00:00 DEBUG (7): additional
+2018-04-21T11:26:21+00:00 DEBUG (7): reviews
+2018-04-21T11:26:21+00:00 DEBUG (7): product.info.child17
+2018-04-21T11:26:21+00:00 DEBUG (7): product.info.child18
+2018-04-21T11:26:21+00:00 DEBUG (7): product.info.child19
+2018-04-21T11:32:18+00:00 DEBUG (7): description
+2018-04-21T11:32:18+00:00 DEBUG (7): additional
+2018-04-21T11:32:18+00:00 DEBUG (7): reviews
+2018-04-21T11:32:18+00:00 DEBUG (7): product.info.child17
+2018-04-21T11:32:18+00:00 DEBUG (7): product.info.child18
+2018-04-21T11:32:18+00:00 DEBUG (7): product.info.child19
+2018-04-21T11:36:51+00:00 DEBUG (7): description
+2018-04-21T11:36:51+00:00 DEBUG (7): additional
+2018-04-21T11:36:51+00:00 DEBUG (7): reviews
+2018-04-21T11:36:51+00:00 DEBUG (7): product.info.child16
+2018-04-21T11:36:51+00:00 DEBUG (7): product.info.child17
+2018-04-21T11:36:51+00:00 DEBUG (7): product.info.child18
+2018-04-21T11:36:51+00:00 DEBUG (7): product.info.child19
+2018-04-21T11:39:11+00:00 DEBUG (7): description
+2018-04-21T11:39:11+00:00 DEBUG (7): additional
+2018-04-21T11:39:11+00:00 DEBUG (7): reviews
+2018-04-21T11:39:11+00:00 DEBUG (7): product.info.child16
+2018-04-21T11:39:11+00:00 DEBUG (7): product.info.child17
+2018-04-21T11:39:11+00:00 DEBUG (7): product.info.child18
+2018-04-21T11:39:11+00:00 DEBUG (7): product.info.child19
+2018-04-21T11:49:05+00:00 DEBUG (7): description
+2018-04-21T11:49:05+00:00 DEBUG (7): additional
+2018-04-21T11:49:05+00:00 DEBUG (7): reviews
+2018-04-21T11:49:05+00:00 DEBUG (7): product.info.child16
+2018-04-21T11:49:05+00:00 DEBUG (7): product.info.child17
+2018-04-21T11:49:05+00:00 DEBUG (7): product.info.child18
+2018-04-21T11:49:05+00:00 DEBUG (7): product.info.child19
+2018-04-21T11:51:47+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2018-04-21T11:55:01+00:00 DEBUG (7): description
+2018-04-21T11:55:01+00:00 DEBUG (7): reviews
+2018-04-21T11:55:01+00:00 DEBUG (7): product.info.child16
+2018-04-21T11:55:01+00:00 DEBUG (7): product.info.child17
+2018-04-21T11:55:01+00:00 DEBUG (7): product.info.child18
+2018-04-21T11:55:01+00:00 DEBUG (7): product.info.child19
+2018-04-21T12:55:49+00:00 DEBUG (7): description
+2018-04-21T12:55:49+00:00 DEBUG (7): reviews
+2018-04-21T12:55:49+00:00 DEBUG (7): product.info.child16
+2018-04-21T12:55:49+00:00 DEBUG (7): product.info.child17
+2018-04-21T12:55:49+00:00 DEBUG (7): product.info.child18
+2018-04-21T12:55:49+00:00 DEBUG (7): product.info.child19
+2018-04-21T13:40:13+00:00 DEBUG (7): description
+2018-04-21T13:40:13+00:00 DEBUG (7): additional
+2018-04-21T13:40:13+00:00 DEBUG (7): reviews
+2018-04-21T13:40:13+00:00 DEBUG (7): product.info.child16
+2018-04-21T13:40:13+00:00 DEBUG (7): product.info.child17
+2018-04-21T13:40:13+00:00 DEBUG (7): product.info.child18
+2018-04-21T13:40:13+00:00 DEBUG (7): product.info.child19
+2018-04-21T15:24:00+00:00 DEBUG (7): description
+2018-04-21T15:24:00+00:00 DEBUG (7): additional
+2018-04-21T15:24:00+00:00 DEBUG (7): reviews
+2018-04-21T15:24:00+00:00 DEBUG (7): product.info.child16
+2018-04-21T15:24:00+00:00 DEBUG (7): product.info.child17
+2018-04-21T15:24:00+00:00 DEBUG (7): product.info.child18
+2018-04-21T15:24:00+00:00 DEBUG (7): product.info.child19
+2018-04-21T15:32:55+00:00 DEBUG (7): description
+2018-04-21T15:32:55+00:00 DEBUG (7): additional
+2018-04-21T15:32:55+00:00 DEBUG (7): reviews
+2018-04-21T15:32:55+00:00 DEBUG (7): product.info.child16
+2018-04-21T15:32:55+00:00 DEBUG (7): product.info.child17
+2018-04-21T15:32:55+00:00 DEBUG (7): product.info.child18
+2018-04-21T15:32:55+00:00 DEBUG (7): product.info.child19
+2018-04-21T15:33:08+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2018-04-21T15:35:30+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2018-04-21T15:36:15+00:00 DEBUG (7): description
+2018-04-21T15:36:15+00:00 DEBUG (7): additional
+2018-04-21T15:36:15+00:00 DEBUG (7): reviews
+2018-04-21T15:36:15+00:00 DEBUG (7): product.info.child16
+2018-04-21T15:36:15+00:00 DEBUG (7): product.info.child17
+2018-04-21T15:36:15+00:00 DEBUG (7): product.info.child18
+2018-04-21T15:36:15+00:00 DEBUG (7): product.info.child19
+2018-04-21T15:43:04+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2018-04-21T15:43:45+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2018-04-21T15:46:54+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2018-04-21T15:50:03+00:00 ERR (3): Warning: getimagesize(http://proyecto-plantilla-1.loc/skin/adminhtml/base/default/images/cookies/ie7-6.gif): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+  in /shared/httpd/proyecto-plantilla-1/magento/lib/Varien/Image/Adapter/Abstract.php on line 87
+2018-04-21T15:50:04+00:00 ERR (3): Warning: getimagesize(http://proyecto-plantilla-1.loc/skin/adminhtml/base/default/images/cookies/ie7-6.gif): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+  in /shared/httpd/proyecto-plantilla-1/magento/lib/Varien/Image/Adapter/Gd2.php on line 91
+2018-04-21T15:50:05+00:00 ERR (3): Warning: getimagesize(http://proyecto-plantilla-1.loc/skin/adminhtml/base/default/images/cookies/ie7-2.gif): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+  in /shared/httpd/proyecto-plantilla-1/magento/lib/Varien/Image/Adapter/Abstract.php on line 87
+2018-04-21T15:50:06+00:00 ERR (3): Warning: getimagesize(http://proyecto-plantilla-1.loc/skin/adminhtml/base/default/images/cookies/ie7-2.gif): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+  in /shared/httpd/proyecto-plantilla-1/magento/lib/Varien/Image/Adapter/Gd2.php on line 91
+2018-04-21T15:50:07+00:00 ERR (3): Warning: getimagesize(http://proyecto-plantilla-1.loc/skin/adminhtml/base/default/images/cookies/ie7-4.gif): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+  in /shared/httpd/proyecto-plantilla-1/magento/lib/Varien/Image/Adapter/Abstract.php on line 87
+2018-04-21T15:50:08+00:00 ERR (3): Warning: getimagesize(http://proyecto-plantilla-1.loc/skin/adminhtml/base/default/images/cookies/ie7-4.gif): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+  in /shared/httpd/proyecto-plantilla-1/magento/lib/Varien/Image/Adapter/Gd2.php on line 91
+2018-04-21T15:50:09+00:00 ERR (3): Warning: getimagesize(http://proyecto-plantilla-1.loc/skin/adminhtml/base/default/images/cookies/ie7-5.gif): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+  in /shared/httpd/proyecto-plantilla-1/magento/lib/Varien/Image/Adapter/Abstract.php on line 87
+2018-04-21T15:50:10+00:00 ERR (3): Warning: getimagesize(http://proyecto-plantilla-1.loc/skin/adminhtml/base/default/images/cookies/ie7-5.gif): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+  in /shared/httpd/proyecto-plantilla-1/magento/lib/Varien/Image/Adapter/Gd2.php on line 91
+2018-04-21T15:50:12+00:00 ERR (3): Warning: getimagesize(http://proyecto-plantilla-1.loc/skin/adminhtml/base/default/images/cookies/ie7-1.gif): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+  in /shared/httpd/proyecto-plantilla-1/magento/lib/Varien/Image/Adapter/Abstract.php on line 87
+2018-04-21T15:50:13+00:00 ERR (3): Warning: getimagesize(http://proyecto-plantilla-1.loc/skin/adminhtml/base/default/images/cookies/ie7-1.gif): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+  in /shared/httpd/proyecto-plantilla-1/magento/lib/Varien/Image/Adapter/Gd2.php on line 91
+2018-04-21T15:50:14+00:00 ERR (3): Warning: getimagesize(http://proyecto-plantilla-1.loc/skin/adminhtml/base/default/images/cookies/ie7-3.gif): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+  in /shared/httpd/proyecto-plantilla-1/magento/lib/Varien/Image/Adapter/Abstract.php on line 87
+2018-04-21T15:50:15+00:00 ERR (3): Warning: getimagesize(http://proyecto-plantilla-1.loc/skin/adminhtml/base/default/images/cookies/ie7-3.gif): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+  in /shared/httpd/proyecto-plantilla-1/magento/lib/Varien/Image/Adapter/Gd2.php on line 91
+2018-04-21T15:50:16+00:00 ERR (3): Warning: getimagesize(http://proyecto-plantilla-1.loc/skin/adminhtml/base/default/images/cookies/ie6-1.gif): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+  in /shared/httpd/proyecto-plantilla-1/magento/lib/Varien/Image/Adapter/Abstract.php on line 87
+2018-04-21T15:50:17+00:00 ERR (3): Warning: getimagesize(http://proyecto-plantilla-1.loc/skin/adminhtml/base/default/images/cookies/ie6-1.gif): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+  in /shared/httpd/proyecto-plantilla-1/magento/lib/Varien/Image/Adapter/Gd2.php on line 91
+2018-04-21T15:50:18+00:00 ERR (3): Warning: getimagesize(http://proyecto-plantilla-1.loc/skin/adminhtml/base/default/images/cookies/ie6-2.gif): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+  in /shared/httpd/proyecto-plantilla-1/magento/lib/Varien/Image/Adapter/Abstract.php on line 87
+2018-04-21T15:50:19+00:00 ERR (3): Warning: getimagesize(http://proyecto-plantilla-1.loc/skin/adminhtml/base/default/images/cookies/ie6-2.gif): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+  in /shared/httpd/proyecto-plantilla-1/magento/lib/Varien/Image/Adapter/Gd2.php on line 91
+2018-04-21T15:50:20+00:00 ERR (3): Warning: getimagesize(http://proyecto-plantilla-1.loc/skin/adminhtml/base/default/images/cookies/firefox.png): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+  in /shared/httpd/proyecto-plantilla-1/magento/lib/Varien/Image/Adapter/Abstract.php on line 87
+2018-04-21T15:50:21+00:00 ERR (3): Warning: getimagesize(http://proyecto-plantilla-1.loc/skin/adminhtml/base/default/images/cookies/firefox.png): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+  in /shared/httpd/proyecto-plantilla-1/magento/lib/Varien/Image/Adapter/Gd2.php on line 91
+2018-04-21T15:50:22+00:00 ERR (3): Warning: getimagesize(http://proyecto-plantilla-1.loc/skin/adminhtml/base/default/images/cookies/opera.png): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+  in /shared/httpd/proyecto-plantilla-1/magento/lib/Varien/Image/Adapter/Abstract.php on line 87
+2018-04-21T15:50:23+00:00 ERR (3): Warning: getimagesize(http://proyecto-plantilla-1.loc/skin/adminhtml/base/default/images/cookies/opera.png): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+  in /shared/httpd/proyecto-plantilla-1/magento/lib/Varien/Image/Adapter/Gd2.php on line 91
+2018-04-21T16:01:54+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2018-04-21T16:02:12+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2018-04-21T16:02:30+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2018-04-21T16:04:40+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2018-04-21T16:06:07+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2018-04-21T16:08:28+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2018-04-21T16:13:26+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2018-04-21T16:17:47+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2018-04-21T16:18:44+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2018-04-21T17:22:06+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2018-04-21T17:24:09+00:00 DEBUG (7): description
+2018-04-21T17:24:09+00:00 DEBUG (7): additional
+2018-04-21T17:24:09+00:00 DEBUG (7): reviews
+2018-04-21T17:24:09+00:00 DEBUG (7): product.info.child16
+2018-04-21T17:24:09+00:00 DEBUG (7): product.info.child17
+2018-04-21T17:24:09+00:00 DEBUG (7): product.info.child18
+2018-04-21T17:24:09+00:00 DEBUG (7): product.info.child19
+2018-04-21T17:29:12+00:00 DEBUG (7): description
+2018-04-21T17:29:12+00:00 DEBUG (7): additional
+2018-04-21T17:29:12+00:00 DEBUG (7): reviews
+2018-04-21T17:29:12+00:00 DEBUG (7): product.info.child16
+2018-04-21T17:29:12+00:00 DEBUG (7): product.info.child17
+2018-04-21T17:29:12+00:00 DEBUG (7): product.info.child18
+2018-04-21T17:29:12+00:00 DEBUG (7): product.info.child19
+2018-04-21T17:29:25+00:00 DEBUG (7): description
+2018-04-21T17:29:25+00:00 DEBUG (7): additional
+2018-04-21T17:29:25+00:00 DEBUG (7): reviews
+2018-04-21T17:29:25+00:00 DEBUG (7): product.info.child16
+2018-04-21T17:29:25+00:00 DEBUG (7): product.info.child17
+2018-04-21T17:29:25+00:00 DEBUG (7): product.info.child18
+2018-04-21T17:29:25+00:00 DEBUG (7): product.info.child19
+2018-04-21T17:39:01+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2018-04-21T17:48:06+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2018-04-21T17:48:27+00:00 DEBUG (7): description
+2018-04-21T17:48:27+00:00 DEBUG (7): additional
+2018-04-21T17:48:27+00:00 DEBUG (7): reviews
+2018-04-21T17:48:27+00:00 DEBUG (7): product.info.child16
+2018-04-21T17:48:27+00:00 DEBUG (7): product.info.child17
+2018-04-21T17:48:27+00:00 DEBUG (7): product.info.child18
+2018-04-21T17:48:27+00:00 DEBUG (7): product.info.child19
+2018-04-21T17:49:23+00:00 DEBUG (7): description
+2018-04-21T17:49:23+00:00 DEBUG (7): additional
+2018-04-21T17:49:23+00:00 DEBUG (7): reviews
+2018-04-21T17:49:23+00:00 DEBUG (7): product.info.child16
+2018-04-21T17:49:23+00:00 DEBUG (7): product.info.child17
+2018-04-21T17:49:23+00:00 DEBUG (7): product.info.child18
+2018-04-21T17:49:23+00:00 DEBUG (7): product.info.child19
+2018-04-21T17:49:39+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2018-04-21T17:53:48+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2018-04-21T17:57:36+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2018-04-21T17:59:05+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2018-04-21T18:04:57+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2018-04-21T18:06:23+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2018-04-21T18:09:28+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2018-04-21T18:10:31+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2018-04-21T18:10:36+00:00 ERR (3): Notice: Undefined variable: addtocarText  in /shared/httpd/proyecto-plantilla-1/magento/app/design/frontend/venustheme/default/template/catalog/product/view/addtocart.phtml on line 48
+2018-04-21T18:10:36+00:00 DEBUG (7): description
+2018-04-21T18:10:36+00:00 DEBUG (7): additional
+2018-04-21T18:10:36+00:00 DEBUG (7): reviews
+2018-04-21T18:10:36+00:00 DEBUG (7): product.info.child16
+2018-04-21T18:10:36+00:00 DEBUG (7): product.info.child17
+2018-04-21T18:10:36+00:00 DEBUG (7): product.info.child18
+2018-04-21T18:10:36+00:00 DEBUG (7): product.info.child19
+2018-04-21T18:10:44+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2018-04-21T18:10:49+00:00 ERR (3): Notice: Undefined variable: addtocarText  in /shared/httpd/proyecto-plantilla-1/magento/app/design/frontend/venustheme/default/template/catalog/product/view/addtocart.phtml on line 48
+2018-04-21T18:10:49+00:00 DEBUG (7): description
+2018-04-21T18:10:49+00:00 DEBUG (7): additional
+2018-04-21T18:10:49+00:00 DEBUG (7): reviews
+2018-04-21T18:10:49+00:00 DEBUG (7): product.info.child16
+2018-04-21T18:10:49+00:00 DEBUG (7): product.info.child17
+2018-04-21T18:10:49+00:00 DEBUG (7): product.info.child18
+2018-04-21T18:10:49+00:00 DEBUG (7): product.info.child19
+2018-04-21T18:10:51+00:00 ERR (3): Notice: Undefined variable: addtocarText  in /shared/httpd/proyecto-plantilla-1/magento/app/design/frontend/venustheme/default/template/catalog/product/view/addtocart.phtml on line 48
+2018-04-21T18:11:57+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2018-04-21T18:15:04+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2018-04-21T18:15:36+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2018-04-21T18:15:54+00:00 DEBUG (7): description
+2018-04-21T18:15:54+00:00 DEBUG (7): additional
+2018-04-21T18:15:54+00:00 DEBUG (7): reviews
+2018-04-21T18:15:54+00:00 DEBUG (7): product.info.child16
+2018-04-21T18:15:54+00:00 DEBUG (7): product.info.child17
+2018-04-21T18:15:54+00:00 DEBUG (7): product.info.child18
+2018-04-21T18:15:54+00:00 DEBUG (7): product.info.child19
+2018-04-21T18:18:12+00:00 DEBUG (7): description
+2018-04-21T18:18:12+00:00 DEBUG (7): additional
+2018-04-21T18:18:12+00:00 DEBUG (7): reviews
+2018-04-21T18:18:12+00:00 DEBUG (7): product.info.child16
+2018-04-21T18:18:12+00:00 DEBUG (7): product.info.child17
+2018-04-21T18:18:12+00:00 DEBUG (7): product.info.child18
+2018-04-21T18:18:12+00:00 DEBUG (7): product.info.child19
+2018-04-21T18:18:22+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2018-04-21T18:19:19+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2018-04-21T18:20:58+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2018-04-21T18:22:13+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2018-04-21T18:26:31+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2018-04-21T18:27:07+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2018-04-21T18:28:35+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2018-04-21T18:29:11+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2018-04-21T18:29:49+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2018-04-21T18:29:52+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2018-04-21T18:29:56+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2018-04-21T18:57:33+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2018-04-21T18:58:23+00:00 DEBUG (7): description
+2018-04-21T18:58:23+00:00 DEBUG (7): additional
+2018-04-21T18:58:23+00:00 DEBUG (7): reviews
+2018-04-21T18:58:23+00:00 DEBUG (7): product.info.child16
+2018-04-21T18:58:23+00:00 DEBUG (7): product.info.child17
+2018-04-21T18:58:23+00:00 DEBUG (7): product.info.child18
+2018-04-21T18:58:23+00:00 DEBUG (7): product.info.child19
+2018-04-21T18:58:43+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2018-04-21T23:01:43+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2018-04-21T23:02:03+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2018-04-21T23:08:00+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2018-04-21T23:08:51+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2018-04-21T23:22:07+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2018-04-21T23:28:45+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2018-04-21T23:29:10+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.

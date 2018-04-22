@@ -26,15 +26,15 @@
 ?>
 <div class="box-account box-info">
     <div class="box-head">
-        <h2><?php echo $this->__('Address Book') ?></h2>
-        <a href="<?php echo $this->getAddressBookUrl() ?>"><?php echo $this->__('Manage Addresses') ?></a>
+        <h2><?php echo $this->__('Lista de direcciones') ?></h2>
+        <a href="<?php echo $this->getAddressBookUrl() ?>"><?php echo $this->__('Editar lista') ?></a>
     </div>
     <div class="col2-set">
         <div class="col-1">
             <div class="box">
                 <div class="box-title">
-                    <h3><?php echo $this->__('Default Billing Address') ?></h3>
-                    <a href="<?php echo $this->getPrimaryBillingAddressEditUrl() ?>"><?php echo $this->__('Edit Address') ?></a>
+                    <h3><?php echo $this->__('Dirección de facturación predeterminada') ?></h3>
+                    <a href="<?php echo $this->getPrimaryBillingAddressEditUrl() ?>"><?php echo $this->__('Editar dirección') ?></a>
                 </div>
                 <div class="box-content">
                     <address><?php echo $this->getPrimaryBillingAddressHtml() ?></address>
@@ -44,8 +44,8 @@
         <div class="col-2">
             <div class="box">
                 <div class="box-title">
-                    <h3><?php echo $this->__('Default Shipping Address') ?></h3>
-                    <a href="<?php echo $this->getPrimaryShippingAddressEditUrl() ?>"><?php echo $this->__('Edit Address') ?></a>
+                    <h3><?php echo $this->__('Dirección de envio predeterminada') ?></h3>
+                    <a href="<?php echo $this->getPrimaryShippingAddressEditUrl() ?>"><?php echo $this->__('Editar dirección') ?></a>
                 </div>
                 <div class="box-content">
                     <address><?php echo $this->getPrimaryShippingAddressHtml() ?></address>

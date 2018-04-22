@@ -26,7 +26,7 @@
     width: 37px;
     z-index: 99;
 }
-.new-icon {background-position: 0 -43px;}
+.new-icon {background-position: 0 -43px; display: none}
 
 .product-block .image {position: relative;}
 .product-block .image .hover-image {

@@ -25,7 +25,7 @@
  */
 ?>
 <?php $_product = $this->getProduct();
-$buttonTitle = Mage::helper('core')->quoteEscape($this->__('Add to Cart'));
+$buttonTitle = Mage::helper('core')->quoteEscape($this->__('Añadir al carrito'));
 $ves = $this->helper('themesettings');
 ?>
 
@@ -36,7 +36,7 @@ $addtocart_text = $ves->getCfgDesign('icons/addtocart_text');
 $addtocart_class = $ves->getCfgDesign('icons/addtocart_class');
 ?>
 <?php
-$addtocartText = '<span>'.$addtocart_text.'</span>';
+$addtocartText = '<span>Añadir al carrito</span>';/*.$addtocart_text.*/
 $addtocartIcon = '<i class="fa '.$addtocart_class.'"></i>';
 ?>
 <?php $addToCartHtml = ''; ?>

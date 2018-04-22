@@ -59,7 +59,7 @@ class Mage_XmlConnect_Adminhtml_Connect_UserController extends Mage_XmlConnect_C
             Mage::logException($e);
             $this->_message(
                 Mage_XmlConnect_Model_Simplexml_Message_Error::ERROR_SERVER_SP_DEFAULT,
-                $this->__('An error occurred while loading login form.')
+                $this->__('Se produjo un error al cargar el formulario de inicio de sesión.')
             );
         }
     }
@@ -76,7 +76,7 @@ class Mage_XmlConnect_Adminhtml_Connect_UserController extends Mage_XmlConnect_C
             if ($session->isLoggedIn()) {
                 $this->_message(
                     Mage_XmlConnect_Model_Simplexml_Message::MESSAGE_STATUS_SUCCESS,
-                    $this->__('Authentication complete.')
+                    $this->__('Autenticación completada.')
                 );
                 return;
             }
@@ -91,20 +91,20 @@ class Mage_XmlConnect_Adminhtml_Connect_UserController extends Mage_XmlConnect_C
                 if ($user && $session->isLoggedIn()) {
                     $this->_message(
                         Mage_XmlConnect_Model_Simplexml_Message::MESSAGE_STATUS_SUCCESS,
-                        $this->__('Authentication complete.')
+                        $this->__('Autenticación completada.')
                     );
                     return;
                 } else {
                     $this->_message(
                         Mage_XmlConnect_Model_Simplexml_Message_Error::ERROR_USER_SPACE_DEFAULT,
-                        $this->__('Invalid login or password.')
+                        $this->__('Email o usuario incorrecots.')
                     );
                     return;
                 }
             }
             $this->_message(
                 Mage_XmlConnect_Model_Simplexml_Message_Error::ERROR_CLIENT_SP_DEFAULT,
-                $this->__('Post data is empty.')
+                $this->__('La información de la publicación está vacía.')
             );
         } catch (Mage_Core_Exception $e) {
             $this->_message(Mage_XmlConnect_Model_Simplexml_Message_Error::ERROR_USER_SPACE_DEFAULT, $e->getMessage());
@@ -112,7 +112,7 @@ class Mage_XmlConnect_Adminhtml_Connect_UserController extends Mage_XmlConnect_C
             Mage::logException($e);
             $this->_message(
                 Mage_XmlConnect_Model_Simplexml_Message_Error::ERROR_SERVER_SP_DEFAULT,
-                $this->__('An error occurred while loading login form.')
+                $this->__('Se produjo un error al cargar el formulario de inicio de sesión.')
             );
         }
     }
@@ -127,7 +127,7 @@ class Mage_XmlConnect_Adminhtml_Connect_UserController extends Mage_XmlConnect_C
             $this->_getSession()->getCookie()->delete($this->_getSession()->getSessionName());
             $this->_message(
                 Mage_XmlConnect_Model_Simplexml_Message::MESSAGE_STATUS_SUCCESS,
-                Mage::helper('adminhtml')->__('You have logged out.')
+                Mage::helper('adminhtml')->__('Usted a cerrado sesión.')
             );
         } catch (Mage_Core_Exception $e) {
             $this->_message(Mage_XmlConnect_Model_Simplexml_Message_Error::ERROR_USER_SPACE_DEFAULT, $e->getMessage());
@@ -135,7 +135,7 @@ class Mage_XmlConnect_Adminhtml_Connect_UserController extends Mage_XmlConnect_C
             Mage::logException($e);
             $this->_message(
                 Mage_XmlConnect_Model_Simplexml_Message_Error::ERROR_SERVER_SP_DEFAULT,
-                $this->__('An error occurred while loading login form.')
+                $this->__('Se produjo un error al cargar el formulario de inicio de sesión.')
             );
         }
     }

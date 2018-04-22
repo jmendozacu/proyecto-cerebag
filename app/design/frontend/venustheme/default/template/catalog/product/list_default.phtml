@@ -75,11 +75,12 @@ if(file_exists($current_catalog_product_path.$common_template)) { //Load in defa
         <?php else: ?>
             <?php // Grid Mode ?>
             <?php $_columnCount = $this->getColumnCount(); ?>
+            <div class="row">
             <ul class="products-grid category-products-grid products-grid--max-<?php echo $columns; ?>-col <?php echo $class; ?>">
                 <?php $x=0; ?>
                 <?php foreach ($_productCollection as $_product): ?>
                     <?php $mId = rand().time(); ?>
-                    <li class="item<?php if($x==0): ?> first<?php elseif($x==($columns-1)): ?> last<?php endif; ?> ">
+                    <li class="col-xs-6 item<?php if($x==0): ?>  first<?php elseif($x==($columns-1)): ?> last<?php endif; ?> ">
                         <?php if($common_item_layout) {
                             require ($common_item_layout);
                         } ?>
@@ -87,6 +88,7 @@ if(file_exists($current_catalog_product_path.$common_template)) { //Load in defa
                     <?php $x++; ?>
                 <?php endforeach ?>
             </ul>
+            </div>
             <script type="text/javascript">decorateGeneric($$('ul.products-grid'), ['odd','even','first','last'])</script>
         <?php endif; ?>
         <?php if ($show_bottomtoolbar): //Enable/Disable Footer Toolbar ?>

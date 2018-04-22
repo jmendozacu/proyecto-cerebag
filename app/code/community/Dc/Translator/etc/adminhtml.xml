@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Dc_Translator
+ * 
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Open Software License (OSL 3.0)
+ * that is available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/osl-3.0.php
+ *
+ * @category   Dc
+ * @package    Dc_Translator
+ * @copyright  Copyright (c) 2012-2015 Damián Culotta. (http://www.damianculotta.com.ar/)
+ * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ */
+-->
+<config>
+    <menu>
+        <system>
+            <children>
+                <translator module="translator">
+                    <title>Translator</title>
+                    <sort_order>25</sort_order>
+                    <children>
+                        <packages module="translator">
+                            <title>Packages</title>
+                            <sort_order>10</sort_order>
+                            <action>adminhtml/translator_package</action>
+                        </packages>
+                        <inline module="translator">
+                            <title>Translation Inline</title>
+                            <sort_order>30</sort_order>
+                            <action>adminhtml/translator_inline</action>
+                        </inline>
+                    </children>
+                </translator>
+            </children>
+        </system>
+    </menu>
+    <acl>
+        <resources>
+            <all>
+                <title>Allow Everything</title>
+            </all>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <translator>
+                                <title>Translator</title>
+                                <sort_order>1025</sort_order>
+                                <children>
+                                    <packages>
+                                        <title>Packages</title>
+                                        <sort_order>10</sort_order>
+                                    </packages>
+                                    <inline>
+                                        <title>Translation Inline</title>
+                                        <sort_order>30</sort_order>
+                                    </inline>
+                                </children>
+                            </translator>
+                            <config>
+                                <children>
+                                    <translator>
+                                        <title>Translator</title>
+                                        <sort_order>1025</sort_order>
+                                    </translator>
+                                </children>
+                            </config>
+                        </children>
+                   </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

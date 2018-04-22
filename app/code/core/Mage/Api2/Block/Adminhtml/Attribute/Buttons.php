@@ -51,7 +51,7 @@ class Mage_Api2_Block_Adminhtml_Attribute_Buttons extends Mage_Adminhtml_Block_T
     {
         $buttons = array(
             'backButton'    => array(
-                'label'     => $this->__('Back'),
+                'label'     => $this->__('Volver'),
                 'onclick'   => sprintf("window.location.href='%s';", $this->getUrl('*/*/')),
                 'class'     => 'back'
             ),

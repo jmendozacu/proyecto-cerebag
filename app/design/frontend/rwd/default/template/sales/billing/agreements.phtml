@@ -26,7 +26,7 @@
 ?>
 <?php /* @var $this Mage_Sales_Block_Billing_Agreements */ ?>
 <div class="page-title">
-    <h1><?php echo $this->__('Billing Agreements') ?></h1>
+    <h1><?php echo $this->__('Acuerdos de facturación') ?></h1>
 </div>
 
 <?php echo $this->getMessagesBlock()->toHtml() ?>
@@ -67,7 +67,7 @@
         </table>
         <script type="text/javascript">decorateTable('billing-agreements')</script>
     <?php else: ?>
-        <p><?php echo $this->__('There are no billing agreements yet.')?></p>
+        <p><?php echo $this->__('Todavía no hay acuerdos de facturación.')?></p>
     <?php endif; ?>
 
     <?php $paymentMethods = $this->getWizardPaymentMethodOptions() ?>
@@ -94,6 +94,6 @@
     <?php endif; ?>
 
     <div class="buttons-set">
-        <p class="back-link"><a href="<?php echo $this->escapeHtml($this->getBackUrl()) ?>"><small>&laquo; </small><?php echo $this->__('Back') ?></a></p>
+        <p class="back-link"><a href="<?php echo $this->escapeHtml($this->getBackUrl()) ?>"><small>&laquo; </small><?php echo $this->__('Volver') ?></a></p>
     </div>
 </div>

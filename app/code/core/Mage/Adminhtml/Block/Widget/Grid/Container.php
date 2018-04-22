@@ -45,7 +45,7 @@ class Mage_Adminhtml_Block_Widget_Grid_Container extends Mage_Adminhtml_Block_Wi
             $this->_addButtonLabel = $this->__('Add New');
         }
         if(is_null($this->_backButtonLabel)) {
-            $this->_backButtonLabel = $this->__('Back');
+            $this->_backButtonLabel = $this->__('Volver');
         }
 
         parent::__construct();

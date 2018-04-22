@@ -37,7 +37,7 @@ Validator.prototype = {
             this.options = $H(test);
             this._test = function(){return true};
         }
-        this.error = error || 'Validation failed.';
+        this.error = error || 'Validación fallida.';
         this.className = className;
     },
     test : function(v, elm) {
@@ -412,20 +412,20 @@ Validation.add('IsEmpty', '', function(v) {
 });
 
 Validation.addAllThese([
-    ['validate-no-html-tags', 'HTML tags are not allowed', function(v) {
+    ['validate-no-html-tags', 'Las etiquetas HTML no están permitidas', function(v) {
 				return !/<(\/)?\w+/.test(v);
 			}],
-	['validate-select', 'Please select an option.', function(v) {
+	['validate-select', 'Por favor, seleccione una opción.', function(v) {
                 return ((v != "none") && (v != null) && (v.length != 0));
             }],
-    ['required-entry', 'This is a required field.', function(v) {
+    ['required-entry', 'Este campo es obligatorio.', function(v) {
                 return !Validation.get('IsEmpty').test(v);
             }],
-    ['validate-number', 'Please enter a valid number in this field.', function(v) {
+    ['validate-number', 'Por favor, introduce un número válido en este campo.', function(v) {
                 return Validation.get('IsEmpty').test(v)
                     || (!isNaN(parseNumber(v)) && /^\s*-?\d*(\.\d*)?\s*$/.test(v));
             }],
-    ['validate-number-range', 'The value is not within the specified range.', function(v, elm) {
+    ['validate-number-range', 'El valor no está dentro del rango especificado.', function(v, elm) {
                 if (Validation.get('IsEmpty').test(v)) {
                     return true;
                 }
@@ -449,10 +449,10 @@ Validation.addAllThese([
 
                 return result;
             }],
-    ['validate-digits', 'Please use numbers only in this field. Please avoid spaces or other characters such as dots or commas.', function(v) {
+    ['validate-digits', 'Por favor, utilize solamente números en este campo. Evite espacios u otros caracteres como puntos o comas.', function(v) {
                 return Validation.get('IsEmpty').test(v) ||  !/[^\d]/.test(v);
             }],
-    ['validate-digits-range', 'The value is not within the specified range.', function(v, elm) {
+    ['validate-digits-range', 'El valor no está dentro del rango especificado.', function(v, elm) {
                 if (Validation.get('IsEmpty').test(v)) {
                     return true;
                 }
@@ -476,35 +476,35 @@ Validation.addAllThese([
 
                 return result;
             }],
-    ['validate-alpha', 'Please use letters only (a-z or A-Z) in this field.', function (v) {
+    ['validate-alpha', 'Por favor, introduzca letras (a-z or A-Z) en este campo.', function (v) {
                 return Validation.get('IsEmpty').test(v) ||  /^[a-zA-Z]+$/.test(v)
             }],
-    ['validate-code', 'Please use only letters (a-z), numbers (0-9) or underscore(_) in this field, first character should be a letter.', function (v) {
+    ['validate-code', 'Por favor, use sólo letras (a-z), números (0-9) o guiones bajos (_) en este campo, el primer carácter debe ser una letra', function (v) {
                 return Validation.get('IsEmpty').test(v) ||  /^[a-z]+[a-z0-9_]+$/.test(v)
             }],
-    ['validate-alphanum', 'Please use only letters (a-z or A-Z) or numbers (0-9) only in this field. No spaces or other characters are allowed.', function(v) {
+    ['validate-alphanum', 'Por favor, use sólo letras (a-z or A-Z) o números (0-9) en este campo. No están permitidos los espacios o carácteres especiales.', function(v) {
                 return Validation.get('IsEmpty').test(v) || /^[a-zA-Z0-9]+$/.test(v)
             }],
-    ['validate-alphanum-with-spaces', 'Please use only letters (a-z or A-Z), numbers (0-9) or spaces only in this field.', function(v) {
+    ['validate-alphanum-with-spaces', 'Por favor, use sólo letras (a-z or A-Z), números (0-9) o espacios en este campo.', function(v) {
                     return Validation.get('IsEmpty').test(v) || /^[a-zA-Z0-9 ]+$/.test(v)
             }],
-    ['validate-street', 'Please use only letters (a-z or A-Z) or numbers (0-9) or spaces and # only in this field.', function(v) {
+    ['validate-street', 'Por favor, use sólo letras (a-z or A-Z), números (0-9) o espacios y #.', function(v) {
                 return Validation.get('IsEmpty').test(v) ||  /^[ \w]{3,}([A-Za-z]\.)?([ \w]*\#\d+)?(\r\n| )[ \w]{3,}/.test(v)
             }],
-    ['validate-phoneStrict', 'Please enter a valid phone number. For example (123) 456-7890 or 123-456-7890.', function(v) {
+    ['validate-phoneStrict', 'Por favor, introduce un número de teléfono válido. Por ejemplo 693 212 422.', function(v) {
                 return Validation.get('IsEmpty').test(v) || /^(\()?\d{3}(\))?(-|\s)?\d{3}(-|\s)\d{4}$/.test(v);
             }],
-    ['validate-phoneLax', 'Please enter a valid phone number. For example (123) 456-7890 or 123-456-7890.', function(v) {
+    ['validate-phoneLax', 'Por favor, introduzca un numero de teléfono válido. Por ejemplo 682646378.', function(v) {
                 return Validation.get('IsEmpty').test(v) || /^((\d[-. ]?)?((\(\d{3}\))|\d{3}))?[-. ]?\d{3}[-. ]?\d{4}$/.test(v);
             }],
-    ['validate-fax', 'Please enter a valid fax number. For example (123) 456-7890 or 123-456-7890.', function(v) {
+    ['validate-fax', 'Por favor, introduce un fax válido. Por ejemplo 678923456.', function(v) {
                 return Validation.get('IsEmpty').test(v) || /^(\()?\d{3}(\))?(-|\s)?\d{3}(-|\s)\d{4}$/.test(v);
             }],
-    ['validate-date', 'Please enter a valid date.', function(v) {
+    ['validate-date', 'Por favor, introduce una fecha válida.', function(v) {
                 var test = new Date(v);
                 return Validation.get('IsEmpty').test(v) || !isNaN(test);
             }],
-    ['validate-date-range', 'The From Date value should be less than or equal to the To Date value.', function(v, elm) {
+    ['validate-date-range', 'El valor Fecha Desde debe ser anterior o igual que el valor Fecha Hasta.', function(v, elm) {
             var m = /\bdate-range-(\w+)-(\w+)\b/.exec(elm.className);
             if (!m || m[2] == 'to' || Validation.get('IsEmpty').test(v)) {
                 return true;
@@ -523,19 +523,19 @@ Validation.addAllThese([
             return !dependentElements.length || Validation.get('IsEmpty').test(dependentElements[0].value)
                 || normalizedTime(v) <= normalizedTime(dependentElements[0].value);
         }],
-    ['validate-email', 'Please enter a valid email address. For example johndoe@domain.com.', function (v) {
+    ['validate-email', 'Por favor, introduce un email válido', function (v) {
                 //return Validation.get('IsEmpty').test(v) || /\w{1,}[@][\w\-]{1,}([.]([\w\-]{1,})){1,3}$/.test(v)
                 //return Validation.get('IsEmpty').test(v) || /^[\!\#$%\*/?|\^\{\}`~&\'\+\-=_a-z0-9][\!\#$%\*/?|\^\{\}`~&\'\+\-=_a-z0-9\.]{1,30}[\!\#$%\*/?|\^\{\}`~&\'\+\-=_a-z0-9]@([a-z0-9_-]{1,30}\.){1,5}[a-z]{2,4}$/i.test(v)
                 return Validation.get('IsEmpty').test(v) || /^([a-z0-9,!\#\$%&'\*\+\/=\?\^_`\{\|\}~-]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+(\.([a-z0-9,!\#\$%&'\*\+\/=\?\^_`\{\|\}~-]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+)*@([a-z0-9-]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+(\.([a-z0-9-]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+)*\.(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]){2,})$/i.test(v)
             }],
-    ['validate-emailSender', 'Please use only visible characters and spaces.', function (v) {
+    ['validate-emailSender', 'Por favor, utiliza los carácteres especificados.', function (v) {
                 return Validation.get('IsEmpty').test(v) ||  /^[\S ]+$/.test(v)
                     }],
-    ['validate-password', 'Please enter 6 or more characters without leading or trailing spaces.', function(v) {
+    ['validate-password', 'Ingrese 6 o más caracteres sin espacios iniciales o finales.', function(v) {
                 var pass=v.strip(); /*strip leading and trailing spaces*/
                 return (!(v.length>0 && v.length < 6) && v.length == pass.length);
             }],
-    ['validate-admin-password', 'Please enter 7 or more characters. Password should contain both numeric and alphabetic characters.', function(v) {
+    ['validate-admin-password', 'Por favor ingrese 7 o más caracteres. La contraseña debe contener tanto caracteres numéricos como alfabéticos.', function(v) {
                 var pass=v.strip();
                 if (0 == pass.length) {
                     return true;
@@ -545,7 +545,7 @@ Validation.addAllThese([
                 }
                 return !(pass.length < 7);
             }],
-    ['validate-cpassword', 'Please make sure your passwords match.', function(v) {
+    ['validate-cpassword', 'Por favor, asegúrese de que las contraseñas coinciden', function(v) {
                 var conf = $('confirmation') ? $('confirmation') : $$('.validate-cpassword')[0];
                 var pass = false;
                 if ($('password')) {
@@ -563,7 +563,7 @@ Validation.addAllThese([
                 }
                 return (pass.value == conf.value);
             }],
-    ['validate-both-passwords', 'Please make sure your passwords match.', function(v, input) {
+    ['validate-both-passwords', 'Por favor, asegúrese de que sus contraseñas coinciden', function(v, input) {
                 var dependentInput = $(input.form[input.name == 'password' ? 'confirmation' : 'password']),
                     isEqualValues  = input.value == dependentInput.value;
 
@@ -573,30 +573,30 @@ Validation.addAllThese([
 
                 return dependentInput.value == '' || isEqualValues;
             }],
-    ['validate-url', 'Please enter a valid URL. Protocol is required (http://, https:// or ftp://)', function (v) {
+    ['validate-url', 'Por favor, introduzca una URL valida. El protocolo es requerido (http://, https:// or ftp://)', function (v) {
                 v = (v || '').replace(/^\s+/, '').replace(/\s+$/, '');
                 return Validation.get('IsEmpty').test(v) || /^(https?|ftp):\/\/(((([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&'\(\)\*\+,;=]|:)*@)?(((\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])\.(\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])\.(\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])\.(\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5]))|((([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.)+(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.?)(:\d*)?)(\/((([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&'\(\)\*\+,;=]|:|@)+(\/(([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&'\(\)\*\+,;=]|:|@)*)*)?)?(\?((([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&'\(\)\*\+,;=]|:|@)|[\uE000-\uF8FF]|\/|\?)*)?(\#((([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&'\(\)\*\+,;=]|:|@)|\/|\?)*)?$/i.test(v)
             }],
-    ['validate-clean-url', 'Please enter a valid URL. For example http://www.example.com or www.example.com', function (v) {
+    ['validate-clean-url', 'Por favor, introduzca una URL valida. Por ejemplo: http://www.example.com or www.example.com', function (v) {
                 return Validation.get('IsEmpty').test(v) || /^(http|https|ftp):\/\/(([A-Z0-9][A-Z0-9_-]*)(\.[A-Z0-9][A-Z0-9_-]*)+.(com|org|net|dk|at|us|tv|info|uk|co.uk|biz|se)$)(:(\d+))?\/?/i.test(v) || /^(www)((\.[A-Z0-9][A-Z0-9_-]*)+.(com|org|net|dk|at|us|tv|info|uk|co.uk|biz|se)$)(:(\d+))?\/?/i.test(v)
             }],
-    ['validate-identifier', 'Please enter a valid URL Key. For example "example-page", "example-page.html" or "anotherlevel/example-page".', function (v) {
+    ['validate-identifier', 'Por favor, introduzca una URL valida. Por ejemplo: "example-page", "example-page.html" or "anotherlevel/example-page".', function (v) {
                 return Validation.get('IsEmpty').test(v) || /^[a-z0-9][a-z0-9_\/-]+(\.[a-z0-9_-]+)?$/.test(v)
             }],
-    ['validate-xml-identifier', 'Please enter a valid XML-identifier. For example something_1, block5, id-4.', function (v) {
+    ['validate-xml-identifier', 'Por favor, introduzca un identificador XML. Por ejemplo: something_1, block5, id-4.', function (v) {
                 return Validation.get('IsEmpty').test(v) || /^[A-Z][A-Z0-9_\/-]*$/i.test(v)
             }],
-    ['validate-ssn', 'Please enter a valid social security number. For example 123-45-6789.', function(v) {
-            return Validation.get('IsEmpty').test(v) || /^\d{3}-?\d{2}-?\d{4}$/.test(v);
+    ['validate-ssn', 'Por favor, introduce un dni valido. Por ejemplo: 12345678w.', function(v) {
+            return Validation.get('IsEmpty').test(v) || /^[0-9]{8}[a-zA-Z]{1}$/.test(v);
             }],
-    ['validate-zip', 'Please enter a valid zip code. For example 90602 or 90602-1234.', function(v) {
+    ['validate-zip', 'Por favor, introduce un CP válido. Por ejemplo 90602.', function(v) {
             return Validation.get('IsEmpty').test(v) || /(^\d{5}$)|(^\d{5}-\d{4}$)/.test(v);
             }],
     ['validate-zip-international', 'Please enter a valid zip code.', function(v) {
             //return Validation.get('IsEmpty').test(v) || /(^[A-z0-9]{2,10}([\s]{0,1}|[\-]{0,1})[A-z0-9]{2,10}$)/.test(v);
             return true;
             }],
-    ['validate-date-au', 'Please use this date format: dd/mm/yyyy. For example 17/03/2006 for the 17th of March, 2006.', function(v) {
+    ['validate-date-au', 'Por favor, usa este formato: dd/mm/yyyy. Por ejemplo 17/03/2006.', function(v) {
                 if(Validation.get('IsEmpty').test(v)) return true;
                 var regex = /^(\d{2})\/(\d{2})\/(\d{4})$/;
                 if(!regex.test(v)) return false;
@@ -612,14 +612,14 @@ Validation.addAllThese([
                 // [$].##
                 return Validation.get('IsEmpty').test(v) ||  /^\$?\-?([1-9]{1}[0-9]{0,2}(\,[0-9]{3})*(\.[0-9]{0,2})?|[1-9]{1}\d*(\.[0-9]{0,2})?|0(\.[0-9]{0,2})?|(\.[0-9]{1,2})?)$/.test(v)
             }],
-    ['validate-one-required', 'Please select one of the above options.', function (v,elm) {
+    ['validate-one-required', 'Por favor, selecciona una de las opciones de abajo.', function (v,elm) {
                 var p = elm.parentNode;
                 var options = p.getElementsByTagName('INPUT');
                 return $A(options).any(function(elm) {
                     return $F(elm);
                 });
             }],
-    ['validate-one-required-by-name', 'Please select one of the options.', function (v,elm) {
+    ['validate-one-required-by-name', 'Por favor, selecciona una de las opciones.', function (v,elm) {
                 var inputs = $$('input[name="' + elm.name.replace(/([\\"])/g, '\\$1') + '"]');
 
                 var error = 1;
@@ -639,17 +639,17 @@ Validation.addAllThese([
                     return false;
                 }
             }],
-    ['validate-not-negative-number', 'Please enter a number 0 or greater in this field.', function(v) {
+    ['validate-not-negative-number', 'Por favor, introduce un número mayor a 0.', function(v) {
                 if (Validation.get('IsEmpty').test(v)) {
                     return true;
                 }
                 v = parseNumber(v);
                 return !isNaN(v) && v >= 0;
             }],
-    ['validate-zero-or-greater', 'Please enter a number 0 or greater in this field.', function(v) {
+    ['validate-zero-or-greater', 'Por favor, introduce un número mayor que 0.', function(v) {
             return Validation.get('validate-not-negative-number').test(v);
         }],
-    ['validate-greater-than-zero', 'Please enter a number greater than 0 in this field.', function(v) {
+    ['validate-greater-than-zero', 'Por favor, introduce un número mayor que 0.', function(v) {
             if (Validation.get('IsEmpty').test(v)) {
                 return true;
             }
@@ -657,7 +657,7 @@ Validation.addAllThese([
             return !isNaN(v) && v > 0;
         }],
 
-    ['validate-special-price', 'The Special Price is active only when lower than the Actual Price.', function(v) {
+    ['validate-special-price', 'El precio especial solo esta activo cuando es menor que el precio actual.', function(v) {
         var priceInput = $('price');
         var priceType = $('price_type');
         var priceValue = parseFloat(v);
@@ -675,15 +675,15 @@ Validation.addAllThese([
         }
         return priceValue < parseFloat($F(priceInput));
     }],
-    ['validate-state', 'Please select State/Province.', function(v) {
+    ['validate-state', 'Por favor, selecciona una provincia', function(v) {
                 return (v!=0 || v == '');
             }],
-    ['validate-new-password', 'Please enter 6 or more characters without leading or trailing spaces.', function(v) {
+    ['validate-new-password', 'Ingrese 6 o más caracteres sin espacios iniciales o finales.', function(v) {
                 if (!Validation.get('validate-password').test(v)) return false;
                 if (Validation.get('IsEmpty').test(v) && v != '') return false;
                 return true;
             }],
-    ['validate-cc-number', 'Please enter a valid credit card number.', function(v, elm) {
+    ['validate-cc-number', 'Por favor introduce un numero de tarjeta válido.', function(v, elm) {
                 // remove non-numerics
                 var ccTypeContainer = $(elm.id.substr(0,elm.id.indexOf('_cc_number')) + '_cc_type');
                 if (ccTypeContainer && typeof Validation.creditCartTypes.get(ccTypeContainer.value) != 'undefined'
@@ -696,7 +696,7 @@ Validation.addAllThese([
                 }
                 return validateCreditCard(v);
             }],
-    ['validate-cc-type', 'Credit card number does not match credit card type.', function(v, elm) {
+    ['validate-cc-type', 'El número de la tarjeta no coincide con el tipo de tarjeta.', function(v, elm) {
                 // remove credit card number delimiters such as "-" and space
                 elm.value = removeDelimiters(elm.value);
                 v         = removeDelimiters(v);
@@ -736,7 +736,7 @@ Validation.addAllThese([
 
                 return true;
             }],
-     ['validate-cc-type-select', 'Card type does not match credit card number.', function(v, elm) {
+     ['validate-cc-type-select', 'El tipo de tarjeta no coincide con el numero de tarjeta.', function(v, elm) {
                 var ccNumberContainer = $(elm.id.substr(0,elm.id.indexOf('_cc_type')) + '_cc_number');
                 if (Validation.isOnChange && Validation.get('IsEmpty').test(ccNumberContainer.value)) {
                     return true;
@@ -746,7 +746,7 @@ Validation.addAllThese([
                 }
                 return Validation.get('validate-cc-type').test(ccNumberContainer.value, ccNumberContainer);
             }],
-     ['validate-cc-exp', 'Incorrect credit card expiration date.', function(v, elm) {
+     ['validate-cc-exp', 'Fecha de expiración de la tarjeta inválido.', function(v, elm) {
                 var ccExpMonth   = v;
                 var ccExpYear    = $(elm.id.substr(0,elm.id.indexOf('_expiration')) + '_expiration_yr').value;
                 var currentTime  = new Date();
@@ -757,7 +757,7 @@ Validation.addAllThese([
                 }
                 return true;
             }],
-     ['validate-cc-cvn', 'Please enter a valid credit card verification number.', function(v, elm) {
+     ['validate-cc-cvn', 'Por favor, introduce un número de verificación válido.', function(v, elm) {
                 var ccTypeContainer = $(elm.id.substr(0,elm.id.indexOf('_cc_cid')) + '_cc_type');
                 if (!ccTypeContainer) {
                     return true;
@@ -777,19 +777,19 @@ Validation.addAllThese([
                 return false;
             }],
      ['validate-ajax', '', function(v, elm) { return true; }],
-     ['validate-data', 'Please use only letters (a-z or A-Z), numbers (0-9) or underscore(_) in this field, first character should be a letter.', function (v) {
+     ['validate-data', 'Por favor, introduce solo letras (a-z or A-Z), números (0-9) o guiones bajos (_) en este campo, el primer caracter tiene que se una letra.', function (v) {
                 if(v != '' && v) {
                     return /^[A-Za-z]+[A-Za-z0-9_]+$/.test(v);
                 }
                 return true;
             }],
-     ['validate-css-length', 'Please input a valid CSS-length. For example 100px or 77pt or 20em or .5ex or 50%.', function (v) {
+     ['validate-css-length', 'Por favor, introduce un tamaño de css válido. Por ejemplo 100px.', function (v) {
                 if (v != '' && v) {
                     return /^[0-9\.]+(px|pt|em|ex|%)?$/.test(v) && (!(/\..*\./.test(v))) && !(/\.$/.test(v));
                 }
                 return true;
             }],
-     ['validate-length', 'Text length does not satisfy specified text range.', function (v, elm) {
+     ['validate-length', 'La longitud del texto no satisface el rango de texto especificado.', function (v, elm) {
                 var reMax = new RegExp(/^maximum-length-[0-9]+$/);
                 var reMin = new RegExp(/^minimum-length-[0-9]+$/);
                 var result = true;
@@ -805,8 +805,8 @@ Validation.addAllThese([
                 });
                 return result;
             }],
-     ['validate-percents', 'Please enter a number lower than 100.', {max:100}],
-     ['required-file', 'Please select a file', function(v, elm) {
+     ['validate-percents', 'Por favor, introduce un número meno a 100.', {max:100}],
+     ['required-file', 'Por favor, selecciona un archivo', function(v, elm) {
          var result = !Validation.get('IsEmpty').test(v);
          if (result === false) {
              ovId = elm.id + '_value';
@@ -816,7 +816,7 @@ Validation.addAllThese([
          }
          return result;
      }],
-     ['validate-cc-ukss', 'Please enter issue number or start date for switch/solo card type.', function(v,elm) {
+     ['validate-cc-ukss', 'Ingrese el número de problema o la fecha de inicio para el tipo de tarjeta conmutada / solo.', function(v,elm) {
          var endposition;
 
          if (elm.id.match(/(.)+_cc_issue$/)) {

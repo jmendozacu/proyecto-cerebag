@@ -232,6 +232,7 @@ input:focus, input:hover, select:focus {
 /* line 127, ../scss/custom_theme.scss */
 .header #header-search.skip-content.skip-active input {
   margin-bottom: 10px;
+  color: black;Poder
 }
 /* line 131, ../scss/custom_theme.scss */
 .header #header-account.skip-active {
@@ -816,7 +817,7 @@ input:focus, input:hover, select:focus {
 /* line 504, ../scss/custom_theme.scss */
 .toolbar .sorter .view-mode strong.grid, .toolbar .sorter .view-mode strong.list,
 .toolbar .sorter .view-mode a.grid:hover, .toolbar .sorter .view-mode a.list:hover {
-  color: #fe5252;
+  color: #00964b;
 }
 /* line 508, ../scss/custom_theme.scss */
 .toolbar .pager {
@@ -942,7 +943,11 @@ input:focus, input:hover, select:focus {
   color: #333333;
   text-decoration: none;
 }
-
+.toolbar .limiter a:hover,
+.toolbar .sort-by a:hover{
+  color: #00964b;
+  text-decoration: none;
+}
 /* line 589, ../scss/custom_theme.scss */
 .pager .limiter label,
 .toolbar label {

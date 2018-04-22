@@ -238,7 +238,7 @@
 			<action method="setTemplate"><template>page/1column.phtml</template></action>
 		</reference>
 
-		<reference name="product.info">
+		<!----><reference name="product.info">
 			<remove name="catalog.product.related"/>
 			<remove name="product.info.upsell"/>
 			<remove name="product.reviews"/>
