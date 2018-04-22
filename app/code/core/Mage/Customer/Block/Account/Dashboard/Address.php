@@ -46,7 +46,7 @@ class Mage_Customer_Block_Account_Dashboard_Address extends Mage_Core_Block_Temp
         if( $address instanceof Varien_Object ) {
             return $address->format('html');
         } else {
-            return Mage::helper('customer')->__('Usted no ha introducido una dirección de envio predterminada');
+            return Mage::helper('customer')->__('Usted no ha introducido una dirección de envio predeterminada');
         }
     }
 
@@ -57,7 +57,7 @@ class Mage_Customer_Block_Account_Dashboard_Address extends Mage_Core_Block_Temp
         if( $address instanceof Varien_Object ) {
             return $address->format('html');
         } else {
-            return Mage::helper('customer')->__('Usted no ha introducido una dirección de facturación predeterminad.');
+            return Mage::helper('customer')->__('Usted no ha introducido una dirección de facturación predeterminada.');
         }
     }
 

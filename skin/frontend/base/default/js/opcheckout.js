@@ -584,7 +584,7 @@ ShippingMethod.prototype = {
     validate: function() {
         var methods = document.getElementsByName('shipping_method');
         if (methods.length==0) {
-            alert(Translator.translate('Your order cannot be completed at this time as there is no shipping methods available for it. Please make necessary changes in your shipping address.').stripTags());
+            alert(Translator.translate('Su pedido no puede completarse en este momento, ya que no hay métodos de envío disponibles. Por favor haga los cambios necesarios en su dirección de envío.').stripTags());
             return false;
         }
 
@@ -597,7 +597,7 @@ ShippingMethod.prototype = {
                 return true;
             }
         }
-        alert(Translator.translate('Please specify shipping method.').stripTags());
+        alert(Translator.translate('Por favor, seleccione un método de envío.').stripTags());
         return false;
     },
 
@@ -778,7 +778,7 @@ Payment.prototype = {
         }
         var methods = document.getElementsByName('payment[method]');
         if (methods.length==0) {
-            alert(Translator.translate('Your order cannot be completed at this time as there is no payment methods available for it.').stripTags());
+            alert(Translator.translate('Su pedido no puede completarse en este momento ya que no hay métodos de pago disponibles para él.').stripTags());
             return false;
         }
         for (var i=0; i<methods.length; i++) {
@@ -790,7 +790,7 @@ Payment.prototype = {
         if (result) {
             return true;
         }
-        alert(Translator.translate('Please specify payment method.').stripTags());
+        alert(Translator.translate('Por favor, especifíca un método de pago.').stripTags());
         return false;
     },
 

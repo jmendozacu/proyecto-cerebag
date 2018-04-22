@@ -39,9 +39,9 @@
         <?php endif; ?>
         <thead>
             <tr>
-                <th rowspan="<?php echo $rowspan ?>"><?php echo $this->__('Product') ?></th>
-                <th colspan="<?php echo $colspan ?>" class="a-center"><?php echo $this->__('Price') ?></th>
-                <th rowspan="<?php echo $rowspan ?>" class="a-center"><?php echo $this->__('Qty') ?></th>
+                <th rowspan="<?php echo $rowspan ?>"><?php echo $this->__('Producto') ?></th>
+                <th colspan="<?php echo $colspan ?>" class="a-center"><?php echo $this->__('Precio') ?></th>
+                <th rowspan="<?php echo $rowspan ?>" class="a-center"><?php echo $this->__('Cantidad') ?></th>
                 <th colspan="<?php echo $colspan ?>" class="a-center"><?php echo $this->__('Subtotal') ?></th>
             </tr>
             <?php if ($this->helper('tax')->displayCartBothPrices()): ?>
@@ -73,9 +73,9 @@
     <div class="buttons-set" id="review-buttons-container">
         <?php echo $this->getChildHtml('button') ?>
         <span class="please-wait" id="review-please-wait" style="display:none;">
-            <img src="<?php echo $this->getSkinUrl('images/opc-ajax-loader.gif') ?>" alt="<?php echo Mage::helper('core')->quoteEscape($this->__('Submitting order information...')) ?>" title="<?php echo Mage::helper('core')->quoteEscape($this->__('Submitting order information...')) ?>" class="v-middle" /> <?php echo $this->__('Submitting order information...') ?>
+            <img src="<?php echo $this->getSkinUrl('images/opc-ajax-loader.gif') ?>" alt="<?php echo Mage::helper('core')->quoteEscape($this->__('Submitting order information...')) ?>" title="<?php echo Mage::helper('core')->quoteEscape($this->__('Submitting order information...')) ?>" class="v-middle" /> <?php echo $this->__('Enviando información del pedido ...') ?>
         </span>
-        <p class="f-left"><?php echo $this->__('Forgot an Item?') ?> <a href="<?php echo $this->getUrl('checkout/cart') ?>" onclick="return confirm('<?php echo Mage::helper('core')->jsQuoteEscape($this->__('Are you sure you want to leave this page? You will need to go through the checkout steps again.')); ?>')"><?php echo $this->__('Edit Your Cart') ?></a></p>
+        <p class="f-left"><?php echo $this->__('¿Has olvidad algo?') ?> <a href="<?php echo $this->getUrl('checkout/cart') ?>" onclick="return confirm('<?php echo Mage::helper('core')->jsQuoteEscape($this->__('¿Estás seguro de que quieres salir de esta página? Tendrá que seguir los pasos de pago nuevamente.')); ?>')"><?php echo $this->__('Edita tu carrito') ?></a></p>
     </div>
     <script type="text/javascript">
     //<![CDATA[

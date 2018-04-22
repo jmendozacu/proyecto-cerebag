@@ -601,3 +601,53 @@ Stack trace:
 #12 /shared/httpd/proyecto-plantilla-1/magento/app/Mage.php(684): Mage_Core_Model_App->run(Array)
 #13 /shared/httpd/proyecto-plantilla-1/magento/index.php(83): Mage::run('', 'store')
 #14 {main}
+2018-04-22T11:08:07+00:00 ERR (3): 
+exception 'Exception' with message 'Error during unserialization' in /shared/httpd/proyecto-plantilla-1/magento/lib/Unserialize/Parser.php:60
+Stack trace:
+#0 /shared/httpd/proyecto-plantilla-1/magento/app/code/core/Mage/Core/Helper/UnserializeArray.php(44): Unserialize_Parser->unserialize(Object(Mage_Core_Model_Config_Element))
+#1 /shared/httpd/proyecto-plantilla-1/magento/app/code/core/Mage/Adminhtml/Model/System/Config/Backend/Serialized.php(37): Mage_Core_Helper_UnserializeArray->unserialize(Object(Mage_Core_Model_Config_Element))
+#2 /shared/httpd/proyecto-plantilla-1/magento/app/code/core/Mage/Core/Model/Config/Data.php(78): Mage_Adminhtml_Model_System_Config_Backend_Serialized->_afterLoad()
+#3 /shared/httpd/proyecto-plantilla-1/magento/app/code/core/Mage/Adminhtml/Block/System/Config/Form.php(334): Mage_Core_Model_Config_Data->afterLoad()
+#4 /shared/httpd/proyecto-plantilla-1/magento/app/code/core/Mage/Adminhtml/Block/System/Config/Form.php(229): Mage_Adminhtml_Block_System_Config_Form->initFields(Object(Varien_Data_Form_Element_Fieldset), Object(Mage_Core_Model_Config_Element), Object(Mage_Core_Model_Config_Element))
+#5 /shared/httpd/proyecto-plantilla-1/magento/app/code/core/Mage/Adminhtml/Block/System/Config/Form.php(164): Mage_Adminhtml_Block_System_Config_Form->_initGroup(Object(Varien_Data_Form), Object(Mage_Core_Model_Config_Element), Object(Mage_Core_Model_Config_Element))
+#6 /shared/httpd/proyecto-plantilla-1/magento/app/code/core/Mage/Adminhtml/Block/System/Config/Edit.php(92): Mage_Adminhtml_Block_System_Config_Form->initForm()
+#7 /shared/httpd/proyecto-plantilla-1/magento/app/code/core/Mage/Adminhtml/controllers/System/ConfigController.php(107): Mage_Adminhtml_Block_System_Config_Edit->initForm()
+#8 /shared/httpd/proyecto-plantilla-1/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Adminhtml_System_ConfigController->editAction()
+#9 /shared/httpd/proyecto-plantilla-1/magento/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('edit')
+#10 /shared/httpd/proyecto-plantilla-1/magento/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#11 /shared/httpd/proyecto-plantilla-1/magento/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#12 /shared/httpd/proyecto-plantilla-1/magento/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#13 /shared/httpd/proyecto-plantilla-1/magento/index.php(83): Mage::run('', 'store')
+#14 {main}
+2018-04-22T12:23:02+00:00 ERR (3): 
+exception 'Mage_Core_Model_Session_Exception' in /shared/httpd/proyecto-plantilla-1/magento/app/code/core/Mage/Core/Model/Session/Abstract/Varien.php:416
+Stack trace:
+#0 /shared/httpd/proyecto-plantilla-1/magento/app/code/core/Mage/Core/Model/Session/Abstract/Varien.php(231): Mage_Core_Model_Session_Abstract_Varien->validate()
+#1 /shared/httpd/proyecto-plantilla-1/magento/app/code/core/Mage/Core/Model/Session/Abstract.php(84): Mage_Core_Model_Session_Abstract_Varien->init('rss', NULL)
+#2 /shared/httpd/proyecto-plantilla-1/magento/app/code/core/Mage/Rss/Model/Session.php(39): Mage_Core_Model_Session_Abstract->init('rss')
+#3 /shared/httpd/proyecto-plantilla-1/magento/app/code/core/Mage/Core/Model/Config.php(1357): Mage_Rss_Model_Session->__construct(Array)
+#4 /shared/httpd/proyecto-plantilla-1/magento/app/Mage.php(463): Mage_Core_Model_Config->getModelInstance('rss/session', Array)
+#5 /shared/httpd/proyecto-plantilla-1/magento/app/Mage.php(477): Mage::getModel('rss/session', Array)
+#6 /shared/httpd/proyecto-plantilla-1/magento/app/code/core/Mage/Rss/Helper/Data.php(48): Mage::getSingleton('rss/session')
+#7 /shared/httpd/proyecto-plantilla-1/magento/app/Mage.php(547): Mage_Rss_Helper_Data->__construct()
+#8 /shared/httpd/proyecto-plantilla-1/magento/app/code/core/Mage/Core/Model/Factory.php(104): Mage::helper('rss')
+#9 /shared/httpd/proyecto-plantilla-1/magento/app/code/core/Mage/Rss/Model/Observer.php(100): Mage_Core_Model_Factory->getHelper('rss')
+#10 /shared/httpd/proyecto-plantilla-1/magento/app/code/core/Mage/Rss/Model/Observer.php(79): Mage_Rss_Model_Observer->_cleanCache('block_html_rss_...')
+#11 /shared/httpd/proyecto-plantilla-1/magento/app/code/core/Mage/Core/Model/App.php(1358): Mage_Rss_Model_Observer->salesOrderItemSaveAfterNotifyStock(Object(Varien_Event_Observer))
+#12 /shared/httpd/proyecto-plantilla-1/magento/app/code/core/Mage/Core/Model/App.php(1337): Mage_Core_Model_App->_callObserverMethod(Object(Mage_Rss_Model_Observer), 'salesOrderItemS...', Object(Varien_Event_Observer))
+#13 /shared/httpd/proyecto-plantilla-1/magento/app/Mage.php(448): Mage_Core_Model_App->dispatchEvent('sales_order_sav...', Array)
+#14 /shared/httpd/proyecto-plantilla-1/magento/app/code/core/Mage/Core/Model/Abstract.php(466): Mage::dispatchEvent('sales_order_sav...', Array)
+#15 /shared/httpd/proyecto-plantilla-1/magento/app/code/core/Mage/Sales/Model/Order.php(2242): Mage_Core_Model_Abstract->_afterSave()
+#16 /shared/httpd/proyecto-plantilla-1/magento/app/code/core/Mage/Core/Model/Abstract.php(319): Mage_Sales_Model_Order->_afterSave()
+#17 /shared/httpd/proyecto-plantilla-1/magento/app/code/core/Mage/Core/Model/Resource/Transaction.php(151): Mage_Core_Model_Abstract->save()
+#18 /shared/httpd/proyecto-plantilla-1/magento/app/code/core/Mage/Sales/Model/Service/Quote.php(189): Mage_Core_Model_Resource_Transaction->save()
+#19 /shared/httpd/proyecto-plantilla-1/magento/app/code/core/Mage/Sales/Model/Service/Quote.php(249): Mage_Sales_Model_Service_Quote->submitOrder()
+#20 /shared/httpd/proyecto-plantilla-1/magento/app/code/core/Mage/Checkout/Model/Type/Onepage.php(815): Mage_Sales_Model_Service_Quote->submitAll()
+#21 /shared/httpd/proyecto-plantilla-1/magento/app/code/core/Mage/Checkout/controllers/OnepageController.php(578): Mage_Checkout_Model_Type_Onepage->saveOrder()
+#22 /shared/httpd/proyecto-plantilla-1/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Checkout_OnepageController->saveOrderAction()
+#23 /shared/httpd/proyecto-plantilla-1/magento/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('saveOrder')
+#24 /shared/httpd/proyecto-plantilla-1/magento/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#25 /shared/httpd/proyecto-plantilla-1/magento/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#26 /shared/httpd/proyecto-plantilla-1/magento/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#27 /shared/httpd/proyecto-plantilla-1/magento/index.php(83): Mage::run('', 'store')
+#28 {main}
