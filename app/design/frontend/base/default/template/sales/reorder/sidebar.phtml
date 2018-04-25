@@ -35,12 +35,12 @@
 <?php if($_items): ?>
 <div class="block block-reorder">
     <div class="block-title">
-        <strong><span><?php echo $this->__('My Orders') ?></span></strong>
+        <strong><span><?php echo $this->__('Mis pedidos') ?></span></strong>
     </div>
     <form method="post" action="<?php echo $this->getFormActionUrl() ?>" id="reorder-validate-detail">
         <?php echo $this->getBlockHtml('formkey'); ?>
         <div class="block-content">
-            <p class="block-subtitle"><?php echo $this->__('Last Ordered Items') ?></p>
+            <p class="block-subtitle"><?php echo $this->__('Ultimos productos comprados:') ?></p>
             <ol id="cart-sidebar-reorder">
             <?php $_showAddButtonFlag = false ?>
             <?php foreach ($_items as $_item): ?>
@@ -62,9 +62,9 @@
             <div id="cart-sidebar-reorder-advice-container"></div>
             <div class="actions">
                 <?php if ($_showAddButtonFlag): ?>
-                    <button type="submit" title="<?php echo Mage::helper('core')->quoteEscape($this->__('Add to Cart')) ?>" class="button btn-cart"><span><span><?php echo $this->__('Add to Cart') ?></span></span></button>
+                    <button type="submit" title="<?php echo Mage::helper('core')->quoteEscape($this->__('Add to Cart')) ?>" class="button btn-cart"><span><span><?php echo $this->__('Añadir al carrito') ?></span></span></button>
                 <?php endif; ?>
-                <a href="<?php echo $this->getUrl('customer/account') ?>"><?php echo $this->__('View All'); ?></a>
+                <a href="<?php echo $this->getUrl('customer/account') ?>"><?php echo $this->__('Ver todos'); ?></a>
             </div>
         </div>
     </form>

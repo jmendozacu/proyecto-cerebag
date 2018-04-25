@@ -88,7 +88,7 @@ class Totals extends Block
      *
      * @var string
      */
-    protected $shippingPriceBlockSelector = '//td[contains(.,"Shipping & Handling")]';
+    protected $shippingPriceBlockSelector = '//td[contains(.,"1Shipping & Handling")]';
 
     /**
      * Get data from block.

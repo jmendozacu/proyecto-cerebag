@@ -55,7 +55,7 @@ class Mage_Sales_Block_Order_Totals extends Mage_Core_Block_Template
     /**
      * Get order object
      *
-     * @return Mage_Sales_Model_Order
+     * @return Mage_Sales_Mode
      */
     public function getOrder()
     {
@@ -113,7 +113,7 @@ class Mage_Sales_Block_Order_Totals extends Mage_Core_Block_Template
                 'code'  => 'shipping',
                 'field' => 'shipping_amount',
                 'value' => $this->getSource()->getShippingAmount(),
-                'label' => $this->__('Shipping & Handling')
+                'label' => $this->__('Envío')
             ));
         }
 
@@ -122,9 +122,9 @@ class Mage_Sales_Block_Order_Totals extends Mage_Core_Block_Template
          */
         if (((float)$this->getSource()->getDiscountAmount()) != 0) {
             if ($this->getSource()->getDiscountDescription()) {
-                $discountLabel = $this->__('Discount (%s)', $source->getDiscountDescription());
+                $discountLabel = $this->__('Descuento (%s)', $source->getDiscountDescription());
             } else {
-                $discountLabel = $this->__('Discount');
+                $discountLabel = $this->__('Descuento');
             }
             $this->_totals['discount'] = new Varien_Object(array(
                 'code'  => 'discount',
@@ -139,7 +139,7 @@ class Mage_Sales_Block_Order_Totals extends Mage_Core_Block_Template
             'field'  => 'grand_total',
             'strong'=> true,
             'value' => $source->getGrandTotal(),
-            'label' => $this->__('Grand Total')
+            'label' => $this->__('Total')
         ));
 
         /**
@@ -149,7 +149,7 @@ class Mage_Sales_Block_Order_Totals extends Mage_Core_Block_Template
             $this->_totals['base_grandtotal'] = new Varien_Object(array(
                 'code'  => 'base_grandtotal',
                 'value' => $this->getOrder()->formatBasePrice($source->getBaseGrandTotal()),
-                'label' => $this->__('Grand Total to be Charged'),
+                'label' => $this->__('Total ha ser cobrado'),
                 'is_formated' => true,
             ));
         }

@@ -68,7 +68,7 @@ class Mage_Adminhtml_Block_Sales_Totals extends Mage_Sales_Block_Order_Totals
                 'code'      => 'shipping',
                 'value'     => $this->getSource()->getShippingAmount(),
                 'base_value'=> $this->getSource()->getBaseShippingAmount(),
-                'label' => $this->helper('sales')->__('Shipping & Handling')
+                'label' => $this->helper('sales')->__('Shipping & Handlidg')
             ));
         }
 

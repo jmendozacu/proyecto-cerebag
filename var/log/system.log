@@ -1378,3 +1378,17 @@
 2018-04-22T11:07:26+00:00 DEBUG (7): product.info.child17
 2018-04-22T11:07:26+00:00 DEBUG (7): product.info.child18
 2018-04-22T11:07:26+00:00 DEBUG (7): product.info.child19
+2018-04-22T12:31:56+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2018-04-22T12:33:57+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2018-04-22T16:23:50+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2018-04-22T16:24:35+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2018-04-22T16:30:07+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2018-04-25T17:52:00+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2018-04-25T17:52:02+00:00 DEBUG (7): description
+2018-04-25T17:52:02+00:00 DEBUG (7): additional
+2018-04-25T17:52:02+00:00 DEBUG (7): reviews
+2018-04-25T17:52:02+00:00 DEBUG (7): product.info.child17
+2018-04-25T17:52:02+00:00 DEBUG (7): product.info.child18
+2018-04-25T17:52:02+00:00 DEBUG (7): product.info.child19
+2018-04-25T18:01:03+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2018-04-25T18:04:03+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.

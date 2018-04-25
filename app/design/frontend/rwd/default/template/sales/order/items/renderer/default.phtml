@@ -181,16 +181,16 @@
     <td class="a-right" data-rwd-label="<?php echo $this->__('Qty') ?>">
         <span class="nobr">
                 <?php if ($this->getItem()->getQtyOrdered() > 0): ?>
-            <?php echo $this->__('Ordered'); ?>: <strong><?php echo $this->getItem()->getQtyOrdered()*1 ?></strong><br />
+            <?php echo $this->__('Encargado'); ?>: <strong><?php echo $this->getItem()->getQtyOrdered()*1 ?></strong><br />
         <?php endif; ?>
         <?php if ($this->getItem()->getQtyShipped() > 0): ?>
-            <?php echo $this->__('Shipped'); ?>: <strong><?php echo $this->getItem()->getQtyShipped()*1 ?></strong><br />
+            <?php echo $this->__('Enviado'); ?>: <strong><?php echo $this->getItem()->getQtyShipped()*1 ?></strong><br />
         <?php endif; ?>
         <?php if ($this->getItem()->getQtyCanceled() > 0): ?>
-            <?php echo $this->__('Canceled'); ?>: <strong><?php echo $this->getItem()->getQtyCanceled()*1 ?></strong><br />
+            <?php echo $this->__('Cancelado'); ?>: <strong><?php echo $this->getItem()->getQtyCanceled()*1 ?></strong><br />
         <?php endif; ?>
         <?php if ($this->getItem()->getQtyRefunded() > 0): ?>
-            <?php echo $this->__('Refunded'); ?>: <strong><?php echo $this->getItem()->getQtyRefunded()*1 ?></strong><br />
+            <?php echo $this->__('Devuelto'); ?>: <strong><?php echo $this->getItem()->getQtyRefunded()*1 ?></strong><br />
         <?php endif; ?>
         </span>
     </td>

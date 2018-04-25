@@ -86,7 +86,7 @@ class Mage_Sales_Block_Order_Shipment extends Mage_Core_Block_Template
     public function getBackTitle()
     {
         if (Mage::getSingleton('customer/session')->isLoggedIn()) {
-            return Mage::helper('sales')->__('Back to My Orders');
+            return Mage::helper('sales')->__('3Back to My Orders');
         }
         return Mage::helper('sales')->__('View Another Order');
     }

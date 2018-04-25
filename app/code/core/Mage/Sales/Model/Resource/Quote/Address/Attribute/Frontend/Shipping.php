@@ -45,7 +45,7 @@ class Mage_Sales_Model_Resource_Quote_Address_Attribute_Frontend_Shipping
     {
         $amount = $address->getShippingAmount();
         if ($amount != 0) {
-            $title = Mage::helper('sales')->__('Shipping & Handling');
+            $title = Mage::helper('sales')->__('3Shipping & Handling');
             if ($address->getShippingDescription()) {
                 $title .= sprintf(' (%s)', $address->getShippingDescription());  
             }

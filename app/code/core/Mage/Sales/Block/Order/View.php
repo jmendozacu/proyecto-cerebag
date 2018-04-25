@@ -86,9 +86,9 @@ class Mage_Sales_Block_Order_View extends Mage_Core_Block_Template
     public function getBackTitle()
     {
         if (Mage::getSingleton('customer/session')->isLoggedIn()) {
-            return Mage::helper('sales')->__('Back to My Orders');
+            return Mage::helper('sales')->__('Volver a mis pedidos');
         }
-        return Mage::helper('sales')->__('View Another Order');
+        return Mage::helper('sales')->__('Ver otro pedido');
     }
 
     public function getInvoiceUrl($order)
